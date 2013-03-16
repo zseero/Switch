@@ -15,8 +15,8 @@ $colors = [
   0xff00ffff,#aqua
   0xff0000ff,#blue
   0xffff00ff,#purple
-  0xff333333,#black
-  0xff333333,#black
+  0xff996633,#brown
+  0xffffffff,#white
 ]
 
 module Mode
@@ -34,15 +34,25 @@ class Coord
   def ==(c)
     (@x == c.x && @y == c.y)
   end
+  def to_s
+    "#{@x}:#{@y}"
+  end
 end
 
 class Window < Gosu::Window
   def initialize
     super(800, 800, false)
+    firstLoad
     init
+  end
+  def firstLoad
   end
   def init
     self.caption = "Switch"
+    $platformImage = Gosu::Image.new(self, "lib/square2.png", false)
+    $windowSize = Coord.new(width, height)
+    @nums = [Gosu::Kb0, Gosu::Kb1, Gosu::Kb2, Gosu::Kb3, Gosu::Kb4,
+             Gosu::Kb5, Gosu::Kb6, Gosu::Kb7, Gosu::Kb8, Gosu::Kb9]
     restart
   end
   def restart
@@ -56,13 +66,22 @@ class Window < Gosu::Window
       exit
     end
   end
+  def increment; end
+  def decrement; end
   def button_down(id)
+    char = Gosu::Window.button_id_to_char(id)
+    increment if char == '='
+    decrement if char == '-'
     checkButtonPresses(id)
   end
   def needs_cursor?
     true
   end
   def update
+    for i in 0...@nums.length
+      num = @nums[i]
+      @level.index = i if button_down?(num)
+    end
     @level.update
     @player.jump if button_down? Gosu::KbUp
     @player.vel_left if button_down? Gosu::KbLeft
@@ -88,10 +107,11 @@ class Player
     for name in sparkNames
       @sparks << Gosu::Image.new(@window, 'lib/' + name, false)
     end
-    @image = Gosu::Image.new(@window, "lib/sphere.png", false)
-    @imageBack = Gosu::Image.new(@window, "lib/sphereBack.png", false)
+    @image = Gosu::Image.new(@window, 'lib/sphere.png', false)
+    @imageBack = Gosu::Image.new(@window, 'lib/sphereBack.png', false)
     size = (@window.width.to_f / @level.width * 2).round
     @size = Coord.new(size, size)
+    $playerSize = @size.dup
     @sizeMult = Coord.new(@size.x.to_f / @image.width.to_f, @size.y.to_f / @image.height.to_f)
     @gravCounter = 0
     @coord = level.playerCoord.dup
@@ -100,6 +120,7 @@ class Player
     @velChange = Coord.new(0.5, 0.5)
     @active = Coord.new(false, false)
     @touchingGround = false
+    @winner = false
   end
 
   def jump
@@ -124,12 +145,17 @@ class Player
 
   def touchingWall?; @coord.x < 0 || @coord.x > @window.width - @size.x; end
 
+  def youWon
+  end
+
   def anyCollisions?(coord = @coord)
     bool = false
     c2 = Coord.new(coord.x + @size.x, coord.y + @size.y)
     @level.layers.each do |layer|
       layer.platforms.each_value do |platform|
-        bool = true if platform.collision?(coord, c2)
+        collision = true if platform.collision?(coord, c2)
+        bool = true if collision
+        @winner = true if collision && platform.colorIndex == 9
       end
     end
     bool
@@ -183,59 +209,47 @@ class Player
     end
     collisionCalc(orig)
     @active = Coord.new(false, false)
+    if @winner == true
+      youWon
+    end
   end
 
   def draw
+    color = $colors[@level.index]
+    if @level.index == 0
+      color = $colors[9]
+    end
     @imageBack.draw @coord.x, @coord.y, Z::PlayerBack, @sizeMult.x, @sizeMult.y
-    @image.draw @coord.x, @coord.y, Z::Player, @sizeMult.x, @sizeMult.y, $colors[@level.index]
+    @image.draw @coord.x, @coord.y, Z::Player, @sizeMult.x, @sizeMult.y, color
     @sparks[@sparkIndex].draw(@coord.x, @coord.y, Z::Player,
-      @sizeMult.x, @sizeMult.y, $colors[@level.index])
+      @sizeMult.x, @sizeMult.y, color)
   end
 end
 
 class Level
   attr_accessor :layers, :width, :index, :playerCoord
-  def initialize(window, name, startLayers = [], width = 40)
-    @window = window
+  def initialize(name, width = 40)
     @name = name
     @width = width
     @layers = []
     10.times do
-      @layers << Layer.new(@window)
-    end
-    for i in 0...startLayers.length
-      layer = startLayers[i]
-      for coord in layer
-        parts = coord.split(':')
-        c = Coord.new(parts[0].to_i, parts[1].to_i)
-        s = "#{c.x}:#{c.y}"
-        @layers[i].platforms[s] = Platform.new(@window, c, i, @width)
-      end
+      @layers << Layer.new
     end
     @index = 0
     @saveCounter = 0
     @playerCoord = Coord.new(0, 0)
-    @nums = [Gosu::Kb0, Gosu::Kb1, Gosu::Kb2, Gosu::Kb3, Gosu::Kb4,
-             Gosu::Kb5, Gosu::Kb6, Gosu::Kb7, Gosu::Kb8, Gosu::Kb9]
-  end
-  def indexChange
-    for i in 0...@nums.length
-      num = @nums[i]
-      @index = i if @window.button_down?(num)
-    end
   end
   def save
   end
   def update
     @saveCounter += 1
-    if @saveCounter > 100
+    if @saveCounter > 1000
       save
       @saveCounter = 0
     end
-    indexChange
     for i in 0...@layers.length
       layer = @layers[i]
-      layer.update(i == @index || i == 0)
+      layer.update(i == @index || i == 0 || i == 9)
     end
   end
   def draw
@@ -245,8 +259,7 @@ end
 
 class Layer
   attr_accessor :platforms
-  def initialize(window)
-    @window = window
+  def initialize
     @platforms = {}
     @showing = false
   end
@@ -261,15 +274,13 @@ end
 
 class Platform
   attr_accessor :coord, :colorIndex
-  attr_reader :size
-  def initialize(window, coord, colorIndex, width)
-    @window = window
+  attr_reader :size, :realCoord
+  def initialize(coord, colorIndex, width)
     @coord = coord
     @colorIndex = colorIndex
-    @size = (@window.width.to_f / width.to_f).round
-    @multFactor = @size.to_f / @image.width.to_f
+    @size = ($windowSize.x.to_f / width.to_f).round
+    @multFactor = @size.to_f / $platformImage.width.to_f
     @showing = false
-    @image = Gosu::Image.new(self, "lib/square2.png", false)
   end
   def collision?(c1, c2)
     return false if !@showing
@@ -284,10 +295,10 @@ class Platform
   def update(showing)
     @showing = showing
     x = @coord.x * @size
-    y = @window.height - (@coord.y * @size) - @size
+    y = $windowSize.y - (@coord.y * @size) - @size
     @realCoord = Coord.new(x, y)
   end
   def draw
-    @image.draw(@realCoord.x, @realCoord.y, Z::Platform, @multFactor, @multFactor, $colors[@colorIndex])
+    $platformImage.draw(@realCoord.x, @realCoord.y, Z::Platform, @multFactor, @multFactor, $colors[@colorIndex])
   end
 end

@@ -1,12 +1,23 @@
 require_relative 'main'
 
-printf 'Levelname: '
+puts "Existing Levels: "
+names = []
+Dir['lvls/*'].each do |name|
+  names << name[5..-5]
+end
+puts names.join(', ')
+puts
+printf 'Your Levelname: '
 name = gets.chomp
 
 class Window < Gosu::Window
   def initialize(name)
     super(800, 800, false)
-    @level = Level.new(self, name)
+    begin
+      @level = YAML.load_file('lvls/' + name + '.lvl')
+    rescue
+      @level = Level.new(name) if @level.nil?
+    end
     init
   end
   def button_down(id)
@@ -20,7 +31,7 @@ class Window < Gosu::Window
       layer = @level.layers[@level.index]
       s = "#{c.x}:#{c.y}"
       if layer.platforms[s].nil?
-        layer.platforms[s] = Platform.new(self, c, @level.index, @level.width)
+        layer.platforms[s] = Platform.new(c, @level.index, @level.width)
       else
         layer.platforms.delete(s)
       end
@@ -29,17 +40,26 @@ class Window < Gosu::Window
 end
 
 class Level
-  def save
-    file = File.open('lvls/' + @name + '.lvl', 'w')
-    level = []
-    @layers.each do |layer|
-      platforms = []
-      layer.platforms.each_value do |platform|
-        platforms << "#{platform.coord.x}:#{platform.coord.y}"
+  def getPlayerStart
+    farDownLeft = nil
+    @layers[0].platforms.each_value do |platform|
+      if platform.realCoord
+        if farDownLeft.nil? || (farDownLeft.x >= platform.realCoord.x &&
+                                farDownLeft.y <= platform.realCoord.y)
+          farDownLeft = platform.realCoord
+        end
       end
-      level << platforms
     end
-    file.puts level.to_yaml
+    if farDownLeft
+      @playerCoord = Coord.new(farDownLeft.x, farDownLeft.y - $playerSize.y)
+    else
+      @playerCoord = Coord.new(0, 0)
+    end
+  end
+  def save
+    getPlayerStart
+    file = File.open('lvls/' + @name + '.lvl', 'w')
+    file.puts self.to_yaml
   end
 end
 
