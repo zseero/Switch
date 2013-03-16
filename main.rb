@@ -3,7 +3,7 @@ require 'gosu'
 require 'yaml'
 
 module Z
-  Background, PlatformBack, Platform, PlayerBack, Player = *0...5
+  Background, PlatformBack, Platform, PlayerBack, Player, White = *0...6
 end
 
 $colors = [
@@ -18,10 +18,6 @@ $colors = [
   0xff996633,#brown
   0xffffffff,#white
 ]
-
-module Mode
-  Menu, Play = *0..1
-end
 
 class Coord
   attr_accessor :x, :y
@@ -49,10 +45,14 @@ class Window < Gosu::Window
   end
   def init
     self.caption = "Switch"
+    @background = Gosu::Image.new(self, "lib/background.jpg", false)
     $platformImage = Gosu::Image.new(self, "lib/square2.png", false)
     $windowSize = Coord.new(width, height)
+    @backgroundMult = Coord.new(width.to_f / @background.width.to_f, height.to_f / @background.height.to_f)
     @nums = [Gosu::Kb0, Gosu::Kb1, Gosu::Kb2, Gosu::Kb3, Gosu::Kb4,
              Gosu::Kb5, Gosu::Kb6, Gosu::Kb7, Gosu::Kb8, Gosu::Kb9]
+    @whiteOpacity = 15
+    @whiteColor = $colors[9]
     restart
   end
   def restart
@@ -78,6 +78,11 @@ class Window < Gosu::Window
     true
   end
   def update
+    if @whiteOpacity >= 0
+      o = @whiteOpacity.round.to_s(16)
+      @whiteColor = "#{o}fffffff".to_i(16)
+      @whiteOpacity -= 0.5
+    end
     for i in 0...@nums.length
       num = @nums[i]
       @level.index = i if button_down?(num)
@@ -90,6 +95,9 @@ class Window < Gosu::Window
     @player.update
   end
   def draw
+    @background.draw(0, 0, Z::Background, @backgroundMult.x, @backgroundMult.y)
+    draw_quad(0, 0, @whiteColor, width, 0, @whiteColor,
+              width, height, @whiteColor, 0, height, @whiteColor, Z::White)
     @level.draw
     @player.draw
   end
@@ -164,11 +172,11 @@ class Player
   def collisionCalc(orig)
     @touchingGround = false
     if anyCollisions?
-      @touchingGround = orig.y < @coord.y
       fy = Coord.new(@coord.x, orig.y)
       fx = Coord.new(orig.x, @coord.y)
       fyWorks = !anyCollisions?(fy)
       fxWorks = !anyCollisions?(fx)
+      @touchingGround = orig.y < @coord.y && !fxWorks
       if fyWorks
         @coord = fy
         @vel.y = 0.0
@@ -207,6 +215,7 @@ class Player
       @coord.x = orig.x
       @vel.x = 0.0
     end
+    @window.restart if @coord.y > @window.height + 50
     collisionCalc(orig)
     @active = Coord.new(false, false)
     if @winner == true
@@ -283,6 +292,10 @@ class Platform
     @showing = false
   end
   def collision?(c1, c2)
+    amt = 3
+    c1, c2 = c1.dup, c2.dup
+    c1.x += amt; c1.y += amt
+    c2.x -= amt; c2.y -= amt
     return false if !@showing
     coord1 = @realCoord
     coord2 = Coord.new(@realCoord.x + @size, @realCoord.y + @size)

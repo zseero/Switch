@@ -9,11 +9,14 @@ class Window < Gosu::Window
   attr_accessor :progress, :levelIndex
   def firstLoad
     @allLevels = Dir['lvls/*']
-    @levelIndex = 0
     progressIncrement
+    @levelIndex = 0
+    @progress.times {increment}
   end
   def restart
+    @whiteOpacity = 15
     @level = YAML.load_file(@allLevels[@levelIndex])
+    @level.index = 0
     @player = Player.new(self, @level)
   end
   def increment

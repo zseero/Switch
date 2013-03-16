@@ -5,7 +5,7 @@ names = []
 Dir['lvls/*'].each do |name|
   names << name[5..-5]
 end
-puts names.join(', ')
+puts names.join(' || ')
 puts
 printf 'Your Levelname: '
 name = gets.chomp
