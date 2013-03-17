@@ -15,6 +15,7 @@ class Window < Gosu::Window
     super(800, 800, false)
     begin
       @level = YAML.load_file('lvls/' + name + '.lvl')
+      @level.name = name
     rescue
       @level = Level.new(name) if @level.nil?
     end
@@ -58,8 +59,30 @@ class Level
   end
   def save
     getPlayerStart
+    @layers.each do |layer|
+      layer.getSides
+    end
     file = File.open('lvls/' + @name + '.lvl', 'w')
     file.puts self.to_yaml
+  end
+end
+
+class Layer
+  def getSides
+    @platforms.each_value do |platform|
+      freeSides = []
+      sides = {:left => Coord.new(-1, 0), :right => Coord.new(1, 0),
+               :top => Coord.new(0, 1), :bottom => Coord.new(0, -1)}
+      sides.each do |side|
+        c = side[1]
+        x = platform.coord.x + c.x
+        y = platform.coord.y + c.y
+        if !valid?(x, y) || @platforms["#{x}:#{y}"].nil?
+          freeSides << side[0]
+        end
+      end
+      platform.freeSides = freeSides
+    end
   end
 end
 

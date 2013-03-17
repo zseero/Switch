@@ -12,6 +12,7 @@ class Window < Gosu::Window
     progressIncrement
     @levelIndex = 0
     @progress.times {increment}
+    restart
   end
   def restart
     @whiteOpacity = 15

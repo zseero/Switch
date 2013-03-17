@@ -1,5 +1,5 @@
 --- !ruby/object:Level
-name: the path
+name: 1 the path
 width: 40
 layers:
 - !ruby/object:Layer
@@ -15,6 +15,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 0
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '1:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 1
@@ -26,6 +30,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 20
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '2:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 2
@@ -37,6 +44,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 40
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '3:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 3
@@ -48,6 +58,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 60
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
   showing: true
 - !ruby/object:Layer
   platforms:
@@ -62,6 +76,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 80
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '5:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 5
@@ -73,6 +91,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 100
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '6:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 6
@@ -84,6 +105,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 120
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '13:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 13
@@ -95,6 +120,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 260
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '14:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -106,6 +135,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 280
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '15:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 15
@@ -117,6 +149,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 300
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '22:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 22
@@ -128,6 +164,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 440
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '23:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 23
@@ -139,6 +179,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 460
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '24:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -150,6 +193,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 480
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '31:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 31
@@ -161,6 +208,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 620
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '32:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 32
@@ -172,6 +223,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 640
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '33:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 33
@@ -183,6 +237,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 660
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
   showing: false
 - !ruby/object:Layer
   platforms:
@@ -197,6 +255,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 140
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '8:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 8
@@ -208,6 +270,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 160
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '9:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 9
@@ -219,6 +284,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 180
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '16:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 16
@@ -230,6 +299,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 320
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '17:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 17
@@ -241,6 +314,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 340
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '18:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 18
@@ -252,6 +328,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 360
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '25:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 25
@@ -263,6 +343,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 500
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '26:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 26
@@ -274,6 +358,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 520
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '27:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 27
@@ -285,6 +372,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 540
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '34:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -296,6 +387,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 680
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '35:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 35
@@ -307,6 +402,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 700
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '36:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 36
@@ -318,6 +416,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 720
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
   showing: false
 - !ruby/object:Layer
   platforms:
@@ -332,6 +434,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 200
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '11:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 11
@@ -343,6 +449,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 220
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '12:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 12
@@ -354,6 +463,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 240
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '19:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 19
@@ -365,6 +478,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 380
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '20:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 20
@@ -376,6 +493,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 400
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '21:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 21
@@ -387,6 +507,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 420
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
     '28:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 28
@@ -398,6 +522,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 560
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '29:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 29
@@ -409,6 +537,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 580
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '30:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 30
@@ -420,6 +551,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 600
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
   showing: false
 - !ruby/object:Layer
   platforms: {}
@@ -449,6 +584,10 @@ layers:
       realCoord: !ruby/object:Coord
         x: 740
         y: 440
+      freeSides:
+      - :left
+      - :top
+      - :bottom
     '38:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 38
@@ -460,6 +599,9 @@ layers:
       realCoord: !ruby/object:Coord
         x: 760
         y: 440
+      freeSides:
+      - :top
+      - :bottom
     '39:17': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 39
@@ -471,9 +613,13 @@ layers:
       realCoord: !ruby/object:Coord
         x: 780
         y: 440
+      freeSides:
+      - :right
+      - :top
+      - :bottom
   showing: true
 index: 0
-saveCounter: 101
+saveCounter: 0
 playerCoord: !ruby/object:Coord
   x: 0
   y: 400

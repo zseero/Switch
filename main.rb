@@ -3,10 +3,10 @@ require 'gosu'
 require 'yaml'
 
 module Z
-  Background, PlatformBack, Platform, PlayerBack, Player, White = *0...6
+  Background, PlatformBack, Platform, PlatformOutline, PlayerBack, Player, White = *0...7
 end
 
-$colors = [
+$normalColors = [
   0xff333333,#black
   0xffff0000,#red
   0xffff8800,#orange
@@ -18,6 +18,23 @@ $colors = [
   0xff996633,#brown
   0xffffffff,#white
 ]
+$colors = [
+  0xbf333333,#black
+  0x5fff0000,#red
+  0x5fff8800,#orange
+  0x5fffff00,#yellow
+  0x5f00ff00,#green
+  0x5f00ffff,#aqua
+  0x5f0000ff,#blue
+  0x5fff00ff,#purple
+  0x5f996633,#brown
+  0x7fffffff,#white
+]
+#opacity = "7"
+#for color in $colors
+#  color = ("#{opacity}f" + color).to_i(16)
+#  puts color.to_s(16)
+#end
 
 class Coord
   attr_accessor :x, :y
@@ -35,6 +52,17 @@ class Coord
   end
 end
 
+class Quad
+  attr_accessor :c1, :c2, :c3, :c4
+  def initialize(c1, c2, c3, c4)
+    @c1, @c2, @c3, @c4 = c1, c2, c3, c4
+  end
+  def draw(color, z)
+    $window.draw_quad(c1.x, c1.y, color, c2.x, c2.y, color,
+                      c3.x, c3.y, color, c4.x, c4.y, color, z)
+  end
+end
+
 class Window < Gosu::Window
   def initialize
     super(800, 800, false)
@@ -44,15 +72,18 @@ class Window < Gosu::Window
   def firstLoad
   end
   def init
+    $window = self
     self.caption = "Switch"
     @background = Gosu::Image.new(self, "lib/background.jpg", false)
     $platformImage = Gosu::Image.new(self, "lib/square2.png", false)
+    size = (width.to_f / @level.width.to_f).round
+    $platformImages = Gosu::Image.load_tiles(self, "lib/whitestreaks.png", size, size, false)
     $windowSize = Coord.new(width, height)
     @backgroundMult = Coord.new(width.to_f / @background.width.to_f, height.to_f / @background.height.to_f)
     @nums = [Gosu::Kb0, Gosu::Kb1, Gosu::Kb2, Gosu::Kb3, Gosu::Kb4,
              Gosu::Kb5, Gosu::Kb6, Gosu::Kb7, Gosu::Kb8, Gosu::Kb9]
     @whiteOpacity = 15
-    @whiteColor = $colors[9]
+    @whiteColor = 0xffffffff
     restart
   end
   def restart
@@ -176,6 +207,7 @@ class Player
       fx = Coord.new(orig.x, @coord.y)
       fyWorks = !anyCollisions?(fy)
       fxWorks = !anyCollisions?(fx)
+      origWorks = !anyCollisions?(orig)
       @touchingGround = orig.y < @coord.y && !fxWorks
       if fyWorks
         @coord = fy
@@ -183,9 +215,25 @@ class Player
       elsif fxWorks
         @coord = fx
         @vel.x = 0.0
-      else
+      elsif origWorks
         @coord = orig
         @vel = Coord.new(0.0, 0.0)
+      else
+        workingCoord = nil
+        i = 0
+        while workingCoord.nil?
+          i += 1
+          coords = [Coord.new(orig.x + i, orig.y),
+           Coord.new(orig.x - i, orig.y),
+           Coord.new(orig.x, orig.y + i),
+           Coord.new(orig.x, orig.y - i)]
+          for c in coords
+            workingCoord = c if !anyCollisions?(c)
+          end
+        end
+        @coord = workingCoord
+        @vel = Coord.new(0.0, 0.0)
+        @touchingGround = false
       end
     end
     @vel.x = 0.0 if @touchingGround && !@active.x
@@ -236,25 +284,25 @@ class Player
 end
 
 class Level
-  attr_accessor :layers, :width, :index, :playerCoord
+  attr_accessor :name, :layers, :width, :index, :playerCoord
   def initialize(name, width = 40)
     @name = name
     @width = width
     @layers = []
-    10.times do
-      @layers << Layer.new
+    for i in 0...10
+      @layers << Layer.new(i)
     end
     @index = 0
-    @saveCounter = 0
+    @saveCounter = 10
     @playerCoord = Coord.new(0, 0)
   end
   def save
   end
   def update
-    @saveCounter += 1
-    if @saveCounter > 1000
+    @saveCounter -= 1
+    if @saveCounter <= 0
       save
-      @saveCounter = 0
+      @saveCounter = 1000
     end
     for i in 0...@layers.length
       layer = @layers[i]
@@ -268,13 +316,19 @@ end
 
 class Layer
   attr_accessor :platforms
-  def initialize
+  def initialize(index)
+    @colorIndex = index
     @platforms = {}
     @showing = false
   end
+  def valid?(x, y)
+    x >= 0 && y >= 0
+  end
   def update(showing)
     @showing = showing
-    @platforms.each_value {|platform| platform.update(@showing)}
+    @platforms.each_value do |platform|
+      platform.update(@showing)
+    end
   end
   def draw
     @platforms.each_value {|platform| platform.draw} if @showing
@@ -282,7 +336,7 @@ class Layer
 end
 
 class Platform
-  attr_accessor :coord, :colorIndex
+  attr_accessor :coord, :colorIndex, :freeSides
   attr_reader :size, :realCoord
   def initialize(coord, colorIndex, width)
     @coord = coord
@@ -290,6 +344,7 @@ class Platform
     @size = ($windowSize.x.to_f / width.to_f).round
     @multFactor = @size.to_f / $platformImage.width.to_f
     @showing = false
+    @freeSides = []
   end
   def collision?(c1, c2)
     amt = 3
@@ -311,7 +366,51 @@ class Platform
     y = $windowSize.y - (@coord.y * @size) - @size
     @realCoord = Coord.new(x, y)
   end
+  def getImg(c)
+    totalLength = $platformImages.length
+    length = Math.sqrt(totalLength)
+    c.y = ($windowSize.y - (c.y * @size)) / @size
+    i = c.x + c.y * length
+    $platformImages[i]
+  end
+  def drawSides
+    topLeft = Coord.new(@realCoord.x, @realCoord.y)
+    topRight = Coord.new(@realCoord.x + @size, @realCoord.y)
+    bottomRight = Coord.new(@realCoord.x + @size, @realCoord.y + @size)
+    bottomLeft = Coord.new(@realCoord.x, @realCoord.y + @size)
+    color = $normalColors[@colorIndex]
+    amt = 2
+    @freeSides = [] if @freeSides.nil?
+    for side in @freeSides
+      case side
+      when :left
+        $window.draw_quad(topLeft.x, topLeft.y, color, topLeft.x + amt, topLeft.y, color,
+                          bottomLeft.x + amt, bottomLeft.y, color, bottomLeft.x, bottomLeft.y, color,
+                          Z::PlatformOutline)
+      when :right
+        $window.draw_quad(topRight.x - amt, topRight.y, color, topRight.x, topRight.y, color,
+                          bottomRight.x, bottomRight.y, color, bottomRight.x - amt, bottomRight.y, color,
+                          Z::PlatformOutline)
+      when :top
+        $window.draw_quad(topLeft.x, topLeft.y, color, topRight.x, topRight.y, color,
+                          topRight.x, topRight.y + amt, color, topLeft.x, topLeft.y + amt, color,
+                          Z::PlatformOutline)
+      when :bottom
+        $window.draw_quad(bottomLeft.x, bottomLeft.y - amt, color, bottomRight.x, bottomRight.y - amt, color,
+                          bottomRight.x, bottomRight.y, color, bottomLeft.x, bottomLeft.y, color,
+                          Z::PlatformOutline)
+      end
+    end
+  end
   def draw
-    $platformImage.draw(@realCoord.x, @realCoord.y, Z::Platform, @multFactor, @multFactor, $colors[@colorIndex])
+    drawSides
+    #$platformImage.draw(@realCoord.x, @realCoord.y, Z::Platform,
+    #              @multFactor, @multFactor, $colors[@colorIndex])
+    getImg(@coord.dup).draw(@realCoord.x, @realCoord.y, Z::PlatformBack,
+                  1, 1, 0xffffffff)
+    color = $colors[@colorIndex]
+    $window.draw_quad(@realCoord.x, @realCoord.y, color, @realCoord.x + @size, @realCoord.y, color,
+              @realCoord.x + @size, @realCoord.y + @size, color, @realCoord.x, @realCoord.y + @size, color,
+              Z::Platform)
   end
 end
