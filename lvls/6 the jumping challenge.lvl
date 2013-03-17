@@ -19,6 +19,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 0
+          y: 740
+        c2: !ruby/object:Coord
+          x: 2
+          y: 740
+        c3: !ruby/object:Coord
+          x: 2
+          y: 760
+        c4: !ruby/object:Coord
+          x: 0
+          y: 760
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 0
+          y: 740
+        c2: !ruby/object:Coord
+          x: 20
+          y: 740
+        c3: !ruby/object:Coord
+          x: 20
+          y: 742
+        c4: !ruby/object:Coord
+          x: 0
+          y: 742
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 0
+          y: 758
+        c2: !ruby/object:Coord
+          x: 20
+          y: 758
+        c3: !ruby/object:Coord
+          x: 20
+          y: 760
+        c4: !ruby/object:Coord
+          x: 0
+          y: 760
     '1:2': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 1
@@ -33,6 +73,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 20
+          y: 740
+        c2: !ruby/object:Coord
+          x: 40
+          y: 740
+        c3: !ruby/object:Coord
+          x: 40
+          y: 742
+        c4: !ruby/object:Coord
+          x: 20
+          y: 742
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 20
+          y: 758
+        c2: !ruby/object:Coord
+          x: 40
+          y: 758
+        c3: !ruby/object:Coord
+          x: 40
+          y: 760
+        c4: !ruby/object:Coord
+          x: 20
+          y: 760
     '2:2': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 2
@@ -47,6 +114,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 40
+          y: 740
+        c2: !ruby/object:Coord
+          x: 60
+          y: 740
+        c3: !ruby/object:Coord
+          x: 60
+          y: 742
+        c4: !ruby/object:Coord
+          x: 40
+          y: 742
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 40
+          y: 758
+        c2: !ruby/object:Coord
+          x: 60
+          y: 758
+        c3: !ruby/object:Coord
+          x: 60
+          y: 760
+        c4: !ruby/object:Coord
+          x: 40
+          y: 760
     '4:2': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -62,6 +156,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 740
+        c2: !ruby/object:Coord
+          x: 100
+          y: 740
+        c3: !ruby/object:Coord
+          x: 100
+          y: 760
+        c4: !ruby/object:Coord
+          x: 98
+          y: 760
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 740
+        c2: !ruby/object:Coord
+          x: 100
+          y: 740
+        c3: !ruby/object:Coord
+          x: 100
+          y: 742
+        c4: !ruby/object:Coord
+          x: 80
+          y: 742
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 758
+        c2: !ruby/object:Coord
+          x: 100
+          y: 758
+        c3: !ruby/object:Coord
+          x: 100
+          y: 760
+        c4: !ruby/object:Coord
+          x: 80
+          y: 760
     '3:2': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 3
@@ -76,6 +210,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 60
+          y: 740
+        c2: !ruby/object:Coord
+          x: 80
+          y: 740
+        c3: !ruby/object:Coord
+          x: 80
+          y: 742
+        c4: !ruby/object:Coord
+          x: 60
+          y: 742
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 60
+          y: 758
+        c2: !ruby/object:Coord
+          x: 80
+          y: 758
+        c3: !ruby/object:Coord
+          x: 80
+          y: 760
+        c4: !ruby/object:Coord
+          x: 60
+          y: 760
     '4:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -90,6 +251,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 540
+        c2: !ruby/object:Coord
+          x: 100
+          y: 540
+        c3: !ruby/object:Coord
+          x: 100
+          y: 542
+        c4: !ruby/object:Coord
+          x: 80
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 558
+        c2: !ruby/object:Coord
+          x: 100
+          y: 558
+        c3: !ruby/object:Coord
+          x: 100
+          y: 560
+        c4: !ruby/object:Coord
+          x: 80
+          y: 560
     '5:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 5
@@ -104,6 +292,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 540
+        c2: !ruby/object:Coord
+          x: 120
+          y: 540
+        c3: !ruby/object:Coord
+          x: 120
+          y: 542
+        c4: !ruby/object:Coord
+          x: 100
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 558
+        c2: !ruby/object:Coord
+          x: 120
+          y: 558
+        c3: !ruby/object:Coord
+          x: 120
+          y: 560
+        c4: !ruby/object:Coord
+          x: 100
+          y: 560
     '6:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 6
@@ -118,6 +333,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 540
+        c2: !ruby/object:Coord
+          x: 140
+          y: 540
+        c3: !ruby/object:Coord
+          x: 140
+          y: 542
+        c4: !ruby/object:Coord
+          x: 120
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 558
+        c2: !ruby/object:Coord
+          x: 140
+          y: 558
+        c3: !ruby/object:Coord
+          x: 140
+          y: 560
+        c4: !ruby/object:Coord
+          x: 120
+          y: 560
     '7:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 7
@@ -132,6 +374,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 540
+        c2: !ruby/object:Coord
+          x: 160
+          y: 540
+        c3: !ruby/object:Coord
+          x: 160
+          y: 542
+        c4: !ruby/object:Coord
+          x: 140
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 558
+        c2: !ruby/object:Coord
+          x: 160
+          y: 558
+        c3: !ruby/object:Coord
+          x: 160
+          y: 560
+        c4: !ruby/object:Coord
+          x: 140
+          y: 560
     '14:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -146,6 +415,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 540
+        c2: !ruby/object:Coord
+          x: 300
+          y: 540
+        c3: !ruby/object:Coord
+          x: 300
+          y: 542
+        c4: !ruby/object:Coord
+          x: 280
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 558
+        c2: !ruby/object:Coord
+          x: 300
+          y: 558
+        c3: !ruby/object:Coord
+          x: 300
+          y: 560
+        c4: !ruby/object:Coord
+          x: 280
+          y: 560
     '13:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 13
@@ -160,6 +456,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 540
+        c2: !ruby/object:Coord
+          x: 280
+          y: 540
+        c3: !ruby/object:Coord
+          x: 280
+          y: 542
+        c4: !ruby/object:Coord
+          x: 260
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 558
+        c2: !ruby/object:Coord
+          x: 280
+          y: 558
+        c3: !ruby/object:Coord
+          x: 280
+          y: 560
+        c4: !ruby/object:Coord
+          x: 260
+          y: 560
     '12:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 12
@@ -174,6 +497,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 540
+        c2: !ruby/object:Coord
+          x: 260
+          y: 540
+        c3: !ruby/object:Coord
+          x: 260
+          y: 542
+        c4: !ruby/object:Coord
+          x: 240
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 558
+        c2: !ruby/object:Coord
+          x: 260
+          y: 558
+        c3: !ruby/object:Coord
+          x: 260
+          y: 560
+        c4: !ruby/object:Coord
+          x: 240
+          y: 560
     '11:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 11
@@ -188,6 +538,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 540
+        c2: !ruby/object:Coord
+          x: 240
+          y: 540
+        c3: !ruby/object:Coord
+          x: 240
+          y: 542
+        c4: !ruby/object:Coord
+          x: 220
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 558
+        c2: !ruby/object:Coord
+          x: 240
+          y: 558
+        c3: !ruby/object:Coord
+          x: 240
+          y: 560
+        c4: !ruby/object:Coord
+          x: 220
+          y: 560
     '10:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 10
@@ -202,6 +579,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 540
+        c2: !ruby/object:Coord
+          x: 220
+          y: 540
+        c3: !ruby/object:Coord
+          x: 220
+          y: 542
+        c4: !ruby/object:Coord
+          x: 200
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 558
+        c2: !ruby/object:Coord
+          x: 220
+          y: 558
+        c3: !ruby/object:Coord
+          x: 220
+          y: 560
+        c4: !ruby/object:Coord
+          x: 200
+          y: 560
     '9:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 9
@@ -216,6 +620,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 540
+        c2: !ruby/object:Coord
+          x: 200
+          y: 540
+        c3: !ruby/object:Coord
+          x: 200
+          y: 542
+        c4: !ruby/object:Coord
+          x: 180
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 558
+        c2: !ruby/object:Coord
+          x: 200
+          y: 558
+        c3: !ruby/object:Coord
+          x: 200
+          y: 560
+        c4: !ruby/object:Coord
+          x: 180
+          y: 560
     '8:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 8
@@ -230,6 +661,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 540
+        c2: !ruby/object:Coord
+          x: 180
+          y: 540
+        c3: !ruby/object:Coord
+          x: 180
+          y: 542
+        c4: !ruby/object:Coord
+          x: 160
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 558
+        c2: !ruby/object:Coord
+          x: 180
+          y: 558
+        c3: !ruby/object:Coord
+          x: 180
+          y: 560
+        c4: !ruby/object:Coord
+          x: 160
+          y: 560
     '3:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 3
@@ -244,6 +702,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 60
+          y: 540
+        c2: !ruby/object:Coord
+          x: 80
+          y: 540
+        c3: !ruby/object:Coord
+          x: 80
+          y: 542
+        c4: !ruby/object:Coord
+          x: 60
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 60
+          y: 558
+        c2: !ruby/object:Coord
+          x: 80
+          y: 558
+        c3: !ruby/object:Coord
+          x: 80
+          y: 560
+        c4: !ruby/object:Coord
+          x: 60
+          y: 560
     '2:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 2
@@ -258,6 +743,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 40
+          y: 540
+        c2: !ruby/object:Coord
+          x: 60
+          y: 540
+        c3: !ruby/object:Coord
+          x: 60
+          y: 542
+        c4: !ruby/object:Coord
+          x: 40
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 40
+          y: 558
+        c2: !ruby/object:Coord
+          x: 60
+          y: 558
+        c3: !ruby/object:Coord
+          x: 60
+          y: 560
+        c4: !ruby/object:Coord
+          x: 40
+          y: 560
     '1:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 1
@@ -272,6 +784,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 20
+          y: 540
+        c2: !ruby/object:Coord
+          x: 40
+          y: 540
+        c3: !ruby/object:Coord
+          x: 40
+          y: 542
+        c4: !ruby/object:Coord
+          x: 20
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 20
+          y: 558
+        c2: !ruby/object:Coord
+          x: 40
+          y: 558
+        c3: !ruby/object:Coord
+          x: 40
+          y: 560
+        c4: !ruby/object:Coord
+          x: 20
+          y: 560
     '0:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 0
@@ -287,6 +826,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 0
+          y: 540
+        c2: !ruby/object:Coord
+          x: 2
+          y: 540
+        c3: !ruby/object:Coord
+          x: 2
+          y: 560
+        c4: !ruby/object:Coord
+          x: 0
+          y: 560
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 0
+          y: 540
+        c2: !ruby/object:Coord
+          x: 20
+          y: 540
+        c3: !ruby/object:Coord
+          x: 20
+          y: 542
+        c4: !ruby/object:Coord
+          x: 0
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 0
+          y: 558
+        c2: !ruby/object:Coord
+          x: 20
+          y: 558
+        c3: !ruby/object:Coord
+          x: 20
+          y: 560
+        c4: !ruby/object:Coord
+          x: 0
+          y: 560
     '15:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 15
@@ -301,6 +880,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 300
+          y: 540
+        c2: !ruby/object:Coord
+          x: 320
+          y: 540
+        c3: !ruby/object:Coord
+          x: 320
+          y: 542
+        c4: !ruby/object:Coord
+          x: 300
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 300
+          y: 558
+        c2: !ruby/object:Coord
+          x: 320
+          y: 558
+        c3: !ruby/object:Coord
+          x: 320
+          y: 560
+        c4: !ruby/object:Coord
+          x: 300
+          y: 560
     '17:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 17
@@ -315,6 +921,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 540
+        c2: !ruby/object:Coord
+          x: 360
+          y: 540
+        c3: !ruby/object:Coord
+          x: 360
+          y: 542
+        c4: !ruby/object:Coord
+          x: 340
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 558
+        c2: !ruby/object:Coord
+          x: 360
+          y: 558
+        c3: !ruby/object:Coord
+          x: 360
+          y: 560
+        c4: !ruby/object:Coord
+          x: 340
+          y: 560
     '16:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 16
@@ -329,6 +962,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 540
+        c2: !ruby/object:Coord
+          x: 340
+          y: 540
+        c3: !ruby/object:Coord
+          x: 340
+          y: 542
+        c4: !ruby/object:Coord
+          x: 320
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 558
+        c2: !ruby/object:Coord
+          x: 340
+          y: 558
+        c3: !ruby/object:Coord
+          x: 340
+          y: 560
+        c4: !ruby/object:Coord
+          x: 320
+          y: 560
     '18:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 18
@@ -343,6 +1003,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 540
+        c2: !ruby/object:Coord
+          x: 380
+          y: 540
+        c3: !ruby/object:Coord
+          x: 380
+          y: 542
+        c4: !ruby/object:Coord
+          x: 360
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 558
+        c2: !ruby/object:Coord
+          x: 380
+          y: 558
+        c3: !ruby/object:Coord
+          x: 380
+          y: 560
+        c4: !ruby/object:Coord
+          x: 360
+          y: 560
     '19:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 19
@@ -357,6 +1044,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 380
+          y: 540
+        c2: !ruby/object:Coord
+          x: 400
+          y: 540
+        c3: !ruby/object:Coord
+          x: 400
+          y: 542
+        c4: !ruby/object:Coord
+          x: 380
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 380
+          y: 558
+        c2: !ruby/object:Coord
+          x: 400
+          y: 558
+        c3: !ruby/object:Coord
+          x: 400
+          y: 560
+        c4: !ruby/object:Coord
+          x: 380
+          y: 560
     '20:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 20
@@ -371,6 +1085,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 540
+        c2: !ruby/object:Coord
+          x: 420
+          y: 540
+        c3: !ruby/object:Coord
+          x: 420
+          y: 542
+        c4: !ruby/object:Coord
+          x: 400
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 558
+        c2: !ruby/object:Coord
+          x: 420
+          y: 558
+        c3: !ruby/object:Coord
+          x: 420
+          y: 560
+        c4: !ruby/object:Coord
+          x: 400
+          y: 560
     '21:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 21
@@ -385,6 +1126,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 540
+        c2: !ruby/object:Coord
+          x: 440
+          y: 540
+        c3: !ruby/object:Coord
+          x: 440
+          y: 542
+        c4: !ruby/object:Coord
+          x: 420
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 558
+        c2: !ruby/object:Coord
+          x: 440
+          y: 558
+        c3: !ruby/object:Coord
+          x: 440
+          y: 560
+        c4: !ruby/object:Coord
+          x: 420
+          y: 560
     '22:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 22
@@ -399,6 +1167,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 540
+        c2: !ruby/object:Coord
+          x: 460
+          y: 540
+        c3: !ruby/object:Coord
+          x: 460
+          y: 542
+        c4: !ruby/object:Coord
+          x: 440
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 558
+        c2: !ruby/object:Coord
+          x: 460
+          y: 558
+        c3: !ruby/object:Coord
+          x: 460
+          y: 560
+        c4: !ruby/object:Coord
+          x: 440
+          y: 560
     '23:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 23
@@ -413,6 +1208,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 540
+        c2: !ruby/object:Coord
+          x: 480
+          y: 540
+        c3: !ruby/object:Coord
+          x: 480
+          y: 542
+        c4: !ruby/object:Coord
+          x: 460
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 558
+        c2: !ruby/object:Coord
+          x: 480
+          y: 558
+        c3: !ruby/object:Coord
+          x: 480
+          y: 560
+        c4: !ruby/object:Coord
+          x: 460
+          y: 560
     '24:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -427,6 +1249,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 540
+        c2: !ruby/object:Coord
+          x: 500
+          y: 540
+        c3: !ruby/object:Coord
+          x: 500
+          y: 542
+        c4: !ruby/object:Coord
+          x: 480
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 558
+        c2: !ruby/object:Coord
+          x: 500
+          y: 558
+        c3: !ruby/object:Coord
+          x: 500
+          y: 560
+        c4: !ruby/object:Coord
+          x: 480
+          y: 560
     '25:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 25
@@ -441,6 +1290,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 500
+          y: 540
+        c2: !ruby/object:Coord
+          x: 520
+          y: 540
+        c3: !ruby/object:Coord
+          x: 520
+          y: 542
+        c4: !ruby/object:Coord
+          x: 500
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 500
+          y: 558
+        c2: !ruby/object:Coord
+          x: 520
+          y: 558
+        c3: !ruby/object:Coord
+          x: 520
+          y: 560
+        c4: !ruby/object:Coord
+          x: 500
+          y: 560
     '26:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 26
@@ -455,6 +1331,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 540
+        c2: !ruby/object:Coord
+          x: 540
+          y: 540
+        c3: !ruby/object:Coord
+          x: 540
+          y: 542
+        c4: !ruby/object:Coord
+          x: 520
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 558
+        c2: !ruby/object:Coord
+          x: 540
+          y: 558
+        c3: !ruby/object:Coord
+          x: 540
+          y: 560
+        c4: !ruby/object:Coord
+          x: 520
+          y: 560
     '28:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 28
@@ -469,6 +1372,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 540
+        c2: !ruby/object:Coord
+          x: 580
+          y: 540
+        c3: !ruby/object:Coord
+          x: 580
+          y: 542
+        c4: !ruby/object:Coord
+          x: 560
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 558
+        c2: !ruby/object:Coord
+          x: 580
+          y: 558
+        c3: !ruby/object:Coord
+          x: 580
+          y: 560
+        c4: !ruby/object:Coord
+          x: 560
+          y: 560
     '27:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 27
@@ -483,6 +1413,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 540
+        c2: !ruby/object:Coord
+          x: 560
+          y: 540
+        c3: !ruby/object:Coord
+          x: 560
+          y: 542
+        c4: !ruby/object:Coord
+          x: 540
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 558
+        c2: !ruby/object:Coord
+          x: 560
+          y: 558
+        c3: !ruby/object:Coord
+          x: 560
+          y: 560
+        c4: !ruby/object:Coord
+          x: 540
+          y: 560
     '29:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 29
@@ -497,6 +1454,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 580
+          y: 540
+        c2: !ruby/object:Coord
+          x: 600
+          y: 540
+        c3: !ruby/object:Coord
+          x: 600
+          y: 542
+        c4: !ruby/object:Coord
+          x: 580
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 580
+          y: 558
+        c2: !ruby/object:Coord
+          x: 600
+          y: 558
+        c3: !ruby/object:Coord
+          x: 600
+          y: 560
+        c4: !ruby/object:Coord
+          x: 580
+          y: 560
     '30:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 30
@@ -511,6 +1495,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 540
+        c2: !ruby/object:Coord
+          x: 620
+          y: 540
+        c3: !ruby/object:Coord
+          x: 620
+          y: 542
+        c4: !ruby/object:Coord
+          x: 600
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 558
+        c2: !ruby/object:Coord
+          x: 620
+          y: 558
+        c3: !ruby/object:Coord
+          x: 620
+          y: 560
+        c4: !ruby/object:Coord
+          x: 600
+          y: 560
     '31:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 31
@@ -525,6 +1536,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 540
+        c2: !ruby/object:Coord
+          x: 640
+          y: 540
+        c3: !ruby/object:Coord
+          x: 640
+          y: 542
+        c4: !ruby/object:Coord
+          x: 620
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 558
+        c2: !ruby/object:Coord
+          x: 640
+          y: 558
+        c3: !ruby/object:Coord
+          x: 640
+          y: 560
+        c4: !ruby/object:Coord
+          x: 620
+          y: 560
     '32:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 32
@@ -539,6 +1577,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 540
+        c2: !ruby/object:Coord
+          x: 660
+          y: 540
+        c3: !ruby/object:Coord
+          x: 660
+          y: 542
+        c4: !ruby/object:Coord
+          x: 640
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 558
+        c2: !ruby/object:Coord
+          x: 660
+          y: 558
+        c3: !ruby/object:Coord
+          x: 660
+          y: 560
+        c4: !ruby/object:Coord
+          x: 640
+          y: 560
     '34:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -554,6 +1619,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 540
+        c2: !ruby/object:Coord
+          x: 700
+          y: 540
+        c3: !ruby/object:Coord
+          x: 700
+          y: 560
+        c4: !ruby/object:Coord
+          x: 698
+          y: 560
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 540
+        c2: !ruby/object:Coord
+          x: 700
+          y: 540
+        c3: !ruby/object:Coord
+          x: 700
+          y: 542
+        c4: !ruby/object:Coord
+          x: 680
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 558
+        c2: !ruby/object:Coord
+          x: 700
+          y: 558
+        c3: !ruby/object:Coord
+          x: 700
+          y: 560
+        c4: !ruby/object:Coord
+          x: 680
+          y: 560
     '33:12': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 33
@@ -568,6 +1673,33 @@ layers:
       freeSides:
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 540
+        c2: !ruby/object:Coord
+          x: 680
+          y: 540
+        c3: !ruby/object:Coord
+          x: 680
+          y: 542
+        c4: !ruby/object:Coord
+          x: 660
+          y: 542
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 558
+        c2: !ruby/object:Coord
+          x: 680
+          y: 558
+        c3: !ruby/object:Coord
+          x: 680
+          y: 560
+        c4: !ruby/object:Coord
+          x: 660
+          y: 560
   showing: true
 - !ruby/object:Layer
   platforms:
@@ -586,6 +1718,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 118
+          y: 720
+        c2: !ruby/object:Coord
+          x: 120
+          y: 720
+        c3: !ruby/object:Coord
+          x: 120
+          y: 740
+        c4: !ruby/object:Coord
+          x: 118
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 720
+        c2: !ruby/object:Coord
+          x: 120
+          y: 720
+        c3: !ruby/object:Coord
+          x: 120
+          y: 722
+        c4: !ruby/object:Coord
+          x: 100
+          y: 722
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 738
+        c2: !ruby/object:Coord
+          x: 120
+          y: 738
+        c3: !ruby/object:Coord
+          x: 120
+          y: 740
+        c4: !ruby/object:Coord
+          x: 100
+          y: 740
     '6:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 6
@@ -602,6 +1774,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 700
+        c2: !ruby/object:Coord
+          x: 122
+          y: 700
+        c3: !ruby/object:Coord
+          x: 122
+          y: 720
+        c4: !ruby/object:Coord
+          x: 120
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 138
+          y: 700
+        c2: !ruby/object:Coord
+          x: 140
+          y: 700
+        c3: !ruby/object:Coord
+          x: 140
+          y: 720
+        c4: !ruby/object:Coord
+          x: 138
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 700
+        c2: !ruby/object:Coord
+          x: 140
+          y: 700
+        c3: !ruby/object:Coord
+          x: 140
+          y: 702
+        c4: !ruby/object:Coord
+          x: 120
+          y: 702
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 718
+        c2: !ruby/object:Coord
+          x: 140
+          y: 718
+        c3: !ruby/object:Coord
+          x: 140
+          y: 720
+        c4: !ruby/object:Coord
+          x: 120
+          y: 720
     '7:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 7
@@ -618,6 +1843,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 680
+        c2: !ruby/object:Coord
+          x: 142
+          y: 680
+        c3: !ruby/object:Coord
+          x: 142
+          y: 700
+        c4: !ruby/object:Coord
+          x: 140
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 158
+          y: 680
+        c2: !ruby/object:Coord
+          x: 160
+          y: 680
+        c3: !ruby/object:Coord
+          x: 160
+          y: 700
+        c4: !ruby/object:Coord
+          x: 158
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 680
+        c2: !ruby/object:Coord
+          x: 160
+          y: 680
+        c3: !ruby/object:Coord
+          x: 160
+          y: 682
+        c4: !ruby/object:Coord
+          x: 140
+          y: 682
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 698
+        c2: !ruby/object:Coord
+          x: 160
+          y: 698
+        c3: !ruby/object:Coord
+          x: 160
+          y: 700
+        c4: !ruby/object:Coord
+          x: 140
+          y: 700
     '8:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 8
@@ -634,6 +1912,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 660
+        c2: !ruby/object:Coord
+          x: 162
+          y: 660
+        c3: !ruby/object:Coord
+          x: 162
+          y: 680
+        c4: !ruby/object:Coord
+          x: 160
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 178
+          y: 660
+        c2: !ruby/object:Coord
+          x: 180
+          y: 660
+        c3: !ruby/object:Coord
+          x: 180
+          y: 680
+        c4: !ruby/object:Coord
+          x: 178
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 660
+        c2: !ruby/object:Coord
+          x: 180
+          y: 660
+        c3: !ruby/object:Coord
+          x: 180
+          y: 662
+        c4: !ruby/object:Coord
+          x: 160
+          y: 662
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 678
+        c2: !ruby/object:Coord
+          x: 180
+          y: 678
+        c3: !ruby/object:Coord
+          x: 180
+          y: 680
+        c4: !ruby/object:Coord
+          x: 160
+          y: 680
     '9:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 9
@@ -650,6 +1981,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 640
+        c2: !ruby/object:Coord
+          x: 182
+          y: 640
+        c3: !ruby/object:Coord
+          x: 182
+          y: 660
+        c4: !ruby/object:Coord
+          x: 180
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 198
+          y: 640
+        c2: !ruby/object:Coord
+          x: 200
+          y: 640
+        c3: !ruby/object:Coord
+          x: 200
+          y: 660
+        c4: !ruby/object:Coord
+          x: 198
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 640
+        c2: !ruby/object:Coord
+          x: 200
+          y: 640
+        c3: !ruby/object:Coord
+          x: 200
+          y: 642
+        c4: !ruby/object:Coord
+          x: 180
+          y: 642
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 658
+        c2: !ruby/object:Coord
+          x: 200
+          y: 658
+        c3: !ruby/object:Coord
+          x: 200
+          y: 660
+        c4: !ruby/object:Coord
+          x: 180
+          y: 660
     '10:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 10
@@ -666,6 +2050,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 620
+        c2: !ruby/object:Coord
+          x: 202
+          y: 620
+        c3: !ruby/object:Coord
+          x: 202
+          y: 640
+        c4: !ruby/object:Coord
+          x: 200
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 218
+          y: 620
+        c2: !ruby/object:Coord
+          x: 220
+          y: 620
+        c3: !ruby/object:Coord
+          x: 220
+          y: 640
+        c4: !ruby/object:Coord
+          x: 218
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 620
+        c2: !ruby/object:Coord
+          x: 220
+          y: 620
+        c3: !ruby/object:Coord
+          x: 220
+          y: 622
+        c4: !ruby/object:Coord
+          x: 200
+          y: 622
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 638
+        c2: !ruby/object:Coord
+          x: 220
+          y: 638
+        c3: !ruby/object:Coord
+          x: 220
+          y: 640
+        c4: !ruby/object:Coord
+          x: 200
+          y: 640
     '11:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 11
@@ -682,6 +2119,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 600
+        c2: !ruby/object:Coord
+          x: 222
+          y: 600
+        c3: !ruby/object:Coord
+          x: 222
+          y: 620
+        c4: !ruby/object:Coord
+          x: 220
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 238
+          y: 600
+        c2: !ruby/object:Coord
+          x: 240
+          y: 600
+        c3: !ruby/object:Coord
+          x: 240
+          y: 620
+        c4: !ruby/object:Coord
+          x: 238
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 600
+        c2: !ruby/object:Coord
+          x: 240
+          y: 600
+        c3: !ruby/object:Coord
+          x: 240
+          y: 602
+        c4: !ruby/object:Coord
+          x: 220
+          y: 602
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 618
+        c2: !ruby/object:Coord
+          x: 240
+          y: 618
+        c3: !ruby/object:Coord
+          x: 240
+          y: 620
+        c4: !ruby/object:Coord
+          x: 220
+          y: 620
     '12:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 12
@@ -698,6 +2188,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 580
+        c2: !ruby/object:Coord
+          x: 242
+          y: 580
+        c3: !ruby/object:Coord
+          x: 242
+          y: 600
+        c4: !ruby/object:Coord
+          x: 240
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 258
+          y: 580
+        c2: !ruby/object:Coord
+          x: 260
+          y: 580
+        c3: !ruby/object:Coord
+          x: 260
+          y: 600
+        c4: !ruby/object:Coord
+          x: 258
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 580
+        c2: !ruby/object:Coord
+          x: 260
+          y: 580
+        c3: !ruby/object:Coord
+          x: 260
+          y: 582
+        c4: !ruby/object:Coord
+          x: 240
+          y: 582
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 598
+        c2: !ruby/object:Coord
+          x: 260
+          y: 598
+        c3: !ruby/object:Coord
+          x: 260
+          y: 600
+        c4: !ruby/object:Coord
+          x: 240
+          y: 600
     '10:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 10
@@ -714,6 +2257,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 660
+        c2: !ruby/object:Coord
+          x: 202
+          y: 660
+        c3: !ruby/object:Coord
+          x: 202
+          y: 680
+        c4: !ruby/object:Coord
+          x: 200
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 218
+          y: 660
+        c2: !ruby/object:Coord
+          x: 220
+          y: 660
+        c3: !ruby/object:Coord
+          x: 220
+          y: 680
+        c4: !ruby/object:Coord
+          x: 218
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 660
+        c2: !ruby/object:Coord
+          x: 220
+          y: 660
+        c3: !ruby/object:Coord
+          x: 220
+          y: 662
+        c4: !ruby/object:Coord
+          x: 200
+          y: 662
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 678
+        c2: !ruby/object:Coord
+          x: 220
+          y: 678
+        c3: !ruby/object:Coord
+          x: 220
+          y: 680
+        c4: !ruby/object:Coord
+          x: 200
+          y: 680
     '11:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 11
@@ -730,6 +2326,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 680
+        c2: !ruby/object:Coord
+          x: 222
+          y: 680
+        c3: !ruby/object:Coord
+          x: 222
+          y: 700
+        c4: !ruby/object:Coord
+          x: 220
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 238
+          y: 680
+        c2: !ruby/object:Coord
+          x: 240
+          y: 680
+        c3: !ruby/object:Coord
+          x: 240
+          y: 700
+        c4: !ruby/object:Coord
+          x: 238
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 680
+        c2: !ruby/object:Coord
+          x: 240
+          y: 680
+        c3: !ruby/object:Coord
+          x: 240
+          y: 682
+        c4: !ruby/object:Coord
+          x: 220
+          y: 682
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 698
+        c2: !ruby/object:Coord
+          x: 240
+          y: 698
+        c3: !ruby/object:Coord
+          x: 240
+          y: 700
+        c4: !ruby/object:Coord
+          x: 220
+          y: 700
     '12:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 12
@@ -746,6 +2395,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 700
+        c2: !ruby/object:Coord
+          x: 242
+          y: 700
+        c3: !ruby/object:Coord
+          x: 242
+          y: 720
+        c4: !ruby/object:Coord
+          x: 240
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 258
+          y: 700
+        c2: !ruby/object:Coord
+          x: 260
+          y: 700
+        c3: !ruby/object:Coord
+          x: 260
+          y: 720
+        c4: !ruby/object:Coord
+          x: 258
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 700
+        c2: !ruby/object:Coord
+          x: 260
+          y: 700
+        c3: !ruby/object:Coord
+          x: 260
+          y: 702
+        c4: !ruby/object:Coord
+          x: 240
+          y: 702
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 718
+        c2: !ruby/object:Coord
+          x: 260
+          y: 718
+        c3: !ruby/object:Coord
+          x: 260
+          y: 720
+        c4: !ruby/object:Coord
+          x: 240
+          y: 720
     '8:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 8
@@ -762,6 +2464,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 620
+        c2: !ruby/object:Coord
+          x: 162
+          y: 620
+        c3: !ruby/object:Coord
+          x: 162
+          y: 640
+        c4: !ruby/object:Coord
+          x: 160
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 178
+          y: 620
+        c2: !ruby/object:Coord
+          x: 180
+          y: 620
+        c3: !ruby/object:Coord
+          x: 180
+          y: 640
+        c4: !ruby/object:Coord
+          x: 178
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 620
+        c2: !ruby/object:Coord
+          x: 180
+          y: 620
+        c3: !ruby/object:Coord
+          x: 180
+          y: 622
+        c4: !ruby/object:Coord
+          x: 160
+          y: 622
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 638
+        c2: !ruby/object:Coord
+          x: 180
+          y: 638
+        c3: !ruby/object:Coord
+          x: 180
+          y: 640
+        c4: !ruby/object:Coord
+          x: 160
+          y: 640
     '7:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 7
@@ -778,6 +2533,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 600
+        c2: !ruby/object:Coord
+          x: 142
+          y: 600
+        c3: !ruby/object:Coord
+          x: 142
+          y: 620
+        c4: !ruby/object:Coord
+          x: 140
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 158
+          y: 600
+        c2: !ruby/object:Coord
+          x: 160
+          y: 600
+        c3: !ruby/object:Coord
+          x: 160
+          y: 620
+        c4: !ruby/object:Coord
+          x: 158
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 600
+        c2: !ruby/object:Coord
+          x: 160
+          y: 600
+        c3: !ruby/object:Coord
+          x: 160
+          y: 602
+        c4: !ruby/object:Coord
+          x: 140
+          y: 602
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 618
+        c2: !ruby/object:Coord
+          x: 160
+          y: 618
+        c3: !ruby/object:Coord
+          x: 160
+          y: 620
+        c4: !ruby/object:Coord
+          x: 140
+          y: 620
     '6:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 6
@@ -794,6 +2602,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 580
+        c2: !ruby/object:Coord
+          x: 122
+          y: 580
+        c3: !ruby/object:Coord
+          x: 122
+          y: 600
+        c4: !ruby/object:Coord
+          x: 120
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 138
+          y: 580
+        c2: !ruby/object:Coord
+          x: 140
+          y: 580
+        c3: !ruby/object:Coord
+          x: 140
+          y: 600
+        c4: !ruby/object:Coord
+          x: 138
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 580
+        c2: !ruby/object:Coord
+          x: 140
+          y: 580
+        c3: !ruby/object:Coord
+          x: 140
+          y: 582
+        c4: !ruby/object:Coord
+          x: 120
+          y: 582
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 598
+        c2: !ruby/object:Coord
+          x: 140
+          y: 598
+        c3: !ruby/object:Coord
+          x: 140
+          y: 600
+        c4: !ruby/object:Coord
+          x: 120
+          y: 600
     '5:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 5
@@ -809,6 +2670,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 118
+          y: 560
+        c2: !ruby/object:Coord
+          x: 120
+          y: 560
+        c3: !ruby/object:Coord
+          x: 120
+          y: 580
+        c4: !ruby/object:Coord
+          x: 118
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 560
+        c2: !ruby/object:Coord
+          x: 120
+          y: 560
+        c3: !ruby/object:Coord
+          x: 120
+          y: 562
+        c4: !ruby/object:Coord
+          x: 100
+          y: 562
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 578
+        c2: !ruby/object:Coord
+          x: 120
+          y: 578
+        c3: !ruby/object:Coord
+          x: 120
+          y: 580
+        c4: !ruby/object:Coord
+          x: 100
+          y: 580
     '13:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 13
@@ -824,6 +2725,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 560
+        c2: !ruby/object:Coord
+          x: 262
+          y: 560
+        c3: !ruby/object:Coord
+          x: 262
+          y: 580
+        c4: !ruby/object:Coord
+          x: 260
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 560
+        c2: !ruby/object:Coord
+          x: 280
+          y: 560
+        c3: !ruby/object:Coord
+          x: 280
+          y: 562
+        c4: !ruby/object:Coord
+          x: 260
+          y: 562
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 578
+        c2: !ruby/object:Coord
+          x: 280
+          y: 578
+        c3: !ruby/object:Coord
+          x: 280
+          y: 580
+        c4: !ruby/object:Coord
+          x: 260
+          y: 580
     '4:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -838,6 +2779,33 @@ layers:
       freeSides:
       - :left
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 720
+        c2: !ruby/object:Coord
+          x: 82
+          y: 720
+        c3: !ruby/object:Coord
+          x: 82
+          y: 740
+        c4: !ruby/object:Coord
+          x: 80
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 738
+        c2: !ruby/object:Coord
+          x: 100
+          y: 738
+        c3: !ruby/object:Coord
+          x: 100
+          y: 740
+        c4: !ruby/object:Coord
+          x: 80
+          y: 740
     '4:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -852,6 +2820,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 700
+        c2: !ruby/object:Coord
+          x: 82
+          y: 700
+        c3: !ruby/object:Coord
+          x: 82
+          y: 720
+        c4: !ruby/object:Coord
+          x: 80
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 700
+        c2: !ruby/object:Coord
+          x: 100
+          y: 700
+        c3: !ruby/object:Coord
+          x: 100
+          y: 720
+        c4: !ruby/object:Coord
+          x: 98
+          y: 720
     '4:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -866,6 +2861,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 660
+        c2: !ruby/object:Coord
+          x: 82
+          y: 660
+        c3: !ruby/object:Coord
+          x: 82
+          y: 680
+        c4: !ruby/object:Coord
+          x: 80
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 660
+        c2: !ruby/object:Coord
+          x: 100
+          y: 660
+        c3: !ruby/object:Coord
+          x: 100
+          y: 680
+        c4: !ruby/object:Coord
+          x: 98
+          y: 680
     '4:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -880,6 +2902,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 680
+        c2: !ruby/object:Coord
+          x: 82
+          y: 680
+        c3: !ruby/object:Coord
+          x: 82
+          y: 700
+        c4: !ruby/object:Coord
+          x: 80
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 680
+        c2: !ruby/object:Coord
+          x: 100
+          y: 680
+        c3: !ruby/object:Coord
+          x: 100
+          y: 700
+        c4: !ruby/object:Coord
+          x: 98
+          y: 700
     '4:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -894,6 +2943,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 640
+        c2: !ruby/object:Coord
+          x: 82
+          y: 640
+        c3: !ruby/object:Coord
+          x: 82
+          y: 660
+        c4: !ruby/object:Coord
+          x: 80
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 640
+        c2: !ruby/object:Coord
+          x: 100
+          y: 640
+        c3: !ruby/object:Coord
+          x: 100
+          y: 660
+        c4: !ruby/object:Coord
+          x: 98
+          y: 660
     '4:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -908,6 +2984,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 620
+        c2: !ruby/object:Coord
+          x: 82
+          y: 620
+        c3: !ruby/object:Coord
+          x: 82
+          y: 640
+        c4: !ruby/object:Coord
+          x: 80
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 620
+        c2: !ruby/object:Coord
+          x: 100
+          y: 620
+        c3: !ruby/object:Coord
+          x: 100
+          y: 640
+        c4: !ruby/object:Coord
+          x: 98
+          y: 640
     '4:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -922,6 +3025,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 600
+        c2: !ruby/object:Coord
+          x: 82
+          y: 600
+        c3: !ruby/object:Coord
+          x: 82
+          y: 620
+        c4: !ruby/object:Coord
+          x: 80
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 600
+        c2: !ruby/object:Coord
+          x: 100
+          y: 600
+        c3: !ruby/object:Coord
+          x: 100
+          y: 620
+        c4: !ruby/object:Coord
+          x: 98
+          y: 620
     '4:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -936,6 +3066,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 580
+        c2: !ruby/object:Coord
+          x: 82
+          y: 580
+        c3: !ruby/object:Coord
+          x: 82
+          y: 600
+        c4: !ruby/object:Coord
+          x: 80
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 98
+          y: 580
+        c2: !ruby/object:Coord
+          x: 100
+          y: 580
+        c3: !ruby/object:Coord
+          x: 100
+          y: 600
+        c4: !ruby/object:Coord
+          x: 98
+          y: 600
     '4:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 4
@@ -950,6 +3107,33 @@ layers:
       freeSides:
       - :left
       - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 560
+        c2: !ruby/object:Coord
+          x: 82
+          y: 560
+        c3: !ruby/object:Coord
+          x: 82
+          y: 580
+        c4: !ruby/object:Coord
+          x: 80
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 560
+        c2: !ruby/object:Coord
+          x: 100
+          y: 560
+        c3: !ruby/object:Coord
+          x: 100
+          y: 562
+        c4: !ruby/object:Coord
+          x: 80
+          y: 562
     '14:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -963,6 +3147,20 @@ layers:
         y: 560
       freeSides:
       - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 560
+        c2: !ruby/object:Coord
+          x: 300
+          y: 560
+        c3: !ruby/object:Coord
+          x: 300
+          y: 562
+        c4: !ruby/object:Coord
+          x: 280
+          y: 562
     '14:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -977,6 +3175,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 580
+        c2: !ruby/object:Coord
+          x: 282
+          y: 580
+        c3: !ruby/object:Coord
+          x: 282
+          y: 600
+        c4: !ruby/object:Coord
+          x: 280
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 298
+          y: 580
+        c2: !ruby/object:Coord
+          x: 300
+          y: 580
+        c3: !ruby/object:Coord
+          x: 300
+          y: 600
+        c4: !ruby/object:Coord
+          x: 298
+          y: 600
     '14:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -991,6 +3216,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 600
+        c2: !ruby/object:Coord
+          x: 282
+          y: 600
+        c3: !ruby/object:Coord
+          x: 282
+          y: 620
+        c4: !ruby/object:Coord
+          x: 280
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 298
+          y: 600
+        c2: !ruby/object:Coord
+          x: 300
+          y: 600
+        c3: !ruby/object:Coord
+          x: 300
+          y: 620
+        c4: !ruby/object:Coord
+          x: 298
+          y: 620
     '14:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -1005,6 +3257,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 620
+        c2: !ruby/object:Coord
+          x: 282
+          y: 620
+        c3: !ruby/object:Coord
+          x: 282
+          y: 640
+        c4: !ruby/object:Coord
+          x: 280
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 298
+          y: 620
+        c2: !ruby/object:Coord
+          x: 300
+          y: 620
+        c3: !ruby/object:Coord
+          x: 300
+          y: 640
+        c4: !ruby/object:Coord
+          x: 298
+          y: 640
     '14:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -1019,6 +3298,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 640
+        c2: !ruby/object:Coord
+          x: 282
+          y: 640
+        c3: !ruby/object:Coord
+          x: 282
+          y: 660
+        c4: !ruby/object:Coord
+          x: 280
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 298
+          y: 640
+        c2: !ruby/object:Coord
+          x: 300
+          y: 640
+        c3: !ruby/object:Coord
+          x: 300
+          y: 660
+        c4: !ruby/object:Coord
+          x: 298
+          y: 660
     '14:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -1033,6 +3339,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 660
+        c2: !ruby/object:Coord
+          x: 282
+          y: 660
+        c3: !ruby/object:Coord
+          x: 282
+          y: 680
+        c4: !ruby/object:Coord
+          x: 280
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 298
+          y: 660
+        c2: !ruby/object:Coord
+          x: 300
+          y: 660
+        c3: !ruby/object:Coord
+          x: 300
+          y: 680
+        c4: !ruby/object:Coord
+          x: 298
+          y: 680
     '14:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -1047,6 +3380,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 680
+        c2: !ruby/object:Coord
+          x: 282
+          y: 680
+        c3: !ruby/object:Coord
+          x: 282
+          y: 700
+        c4: !ruby/object:Coord
+          x: 280
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 298
+          y: 680
+        c2: !ruby/object:Coord
+          x: 300
+          y: 680
+        c3: !ruby/object:Coord
+          x: 300
+          y: 700
+        c4: !ruby/object:Coord
+          x: 298
+          y: 700
     '14:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -1061,6 +3421,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 700
+        c2: !ruby/object:Coord
+          x: 282
+          y: 700
+        c3: !ruby/object:Coord
+          x: 282
+          y: 720
+        c4: !ruby/object:Coord
+          x: 280
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 298
+          y: 700
+        c2: !ruby/object:Coord
+          x: 300
+          y: 700
+        c3: !ruby/object:Coord
+          x: 300
+          y: 720
+        c4: !ruby/object:Coord
+          x: 298
+          y: 720
     '14:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 14
@@ -1074,6 +3461,20 @@ layers:
         y: 720
       freeSides:
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 280
+          y: 738
+        c2: !ruby/object:Coord
+          x: 300
+          y: 738
+        c3: !ruby/object:Coord
+          x: 300
+          y: 740
+        c4: !ruby/object:Coord
+          x: 280
+          y: 740
     '13:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 13
@@ -1089,6 +3490,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 720
+        c2: !ruby/object:Coord
+          x: 262
+          y: 720
+        c3: !ruby/object:Coord
+          x: 262
+          y: 740
+        c4: !ruby/object:Coord
+          x: 260
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 720
+        c2: !ruby/object:Coord
+          x: 280
+          y: 720
+        c3: !ruby/object:Coord
+          x: 280
+          y: 722
+        c4: !ruby/object:Coord
+          x: 260
+          y: 722
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 738
+        c2: !ruby/object:Coord
+          x: 280
+          y: 738
+        c3: !ruby/object:Coord
+          x: 280
+          y: 740
+        c4: !ruby/object:Coord
+          x: 260
+          y: 740
     '15:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 15
@@ -1104,6 +3545,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 318
+          y: 720
+        c2: !ruby/object:Coord
+          x: 320
+          y: 720
+        c3: !ruby/object:Coord
+          x: 320
+          y: 740
+        c4: !ruby/object:Coord
+          x: 318
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 300
+          y: 720
+        c2: !ruby/object:Coord
+          x: 320
+          y: 720
+        c3: !ruby/object:Coord
+          x: 320
+          y: 722
+        c4: !ruby/object:Coord
+          x: 300
+          y: 722
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 300
+          y: 738
+        c2: !ruby/object:Coord
+          x: 320
+          y: 738
+        c3: !ruby/object:Coord
+          x: 320
+          y: 740
+        c4: !ruby/object:Coord
+          x: 300
+          y: 740
     '16:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 16
@@ -1120,6 +3601,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 700
+        c2: !ruby/object:Coord
+          x: 322
+          y: 700
+        c3: !ruby/object:Coord
+          x: 322
+          y: 720
+        c4: !ruby/object:Coord
+          x: 320
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 338
+          y: 700
+        c2: !ruby/object:Coord
+          x: 340
+          y: 700
+        c3: !ruby/object:Coord
+          x: 340
+          y: 720
+        c4: !ruby/object:Coord
+          x: 338
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 700
+        c2: !ruby/object:Coord
+          x: 340
+          y: 700
+        c3: !ruby/object:Coord
+          x: 340
+          y: 702
+        c4: !ruby/object:Coord
+          x: 320
+          y: 702
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 718
+        c2: !ruby/object:Coord
+          x: 340
+          y: 718
+        c3: !ruby/object:Coord
+          x: 340
+          y: 720
+        c4: !ruby/object:Coord
+          x: 320
+          y: 720
     '17:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 17
@@ -1136,6 +3670,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 680
+        c2: !ruby/object:Coord
+          x: 342
+          y: 680
+        c3: !ruby/object:Coord
+          x: 342
+          y: 700
+        c4: !ruby/object:Coord
+          x: 340
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 358
+          y: 680
+        c2: !ruby/object:Coord
+          x: 360
+          y: 680
+        c3: !ruby/object:Coord
+          x: 360
+          y: 700
+        c4: !ruby/object:Coord
+          x: 358
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 680
+        c2: !ruby/object:Coord
+          x: 360
+          y: 680
+        c3: !ruby/object:Coord
+          x: 360
+          y: 682
+        c4: !ruby/object:Coord
+          x: 340
+          y: 682
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 698
+        c2: !ruby/object:Coord
+          x: 360
+          y: 698
+        c3: !ruby/object:Coord
+          x: 360
+          y: 700
+        c4: !ruby/object:Coord
+          x: 340
+          y: 700
     '18:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 18
@@ -1152,6 +3739,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 660
+        c2: !ruby/object:Coord
+          x: 362
+          y: 660
+        c3: !ruby/object:Coord
+          x: 362
+          y: 680
+        c4: !ruby/object:Coord
+          x: 360
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 378
+          y: 660
+        c2: !ruby/object:Coord
+          x: 380
+          y: 660
+        c3: !ruby/object:Coord
+          x: 380
+          y: 680
+        c4: !ruby/object:Coord
+          x: 378
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 660
+        c2: !ruby/object:Coord
+          x: 380
+          y: 660
+        c3: !ruby/object:Coord
+          x: 380
+          y: 662
+        c4: !ruby/object:Coord
+          x: 360
+          y: 662
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 678
+        c2: !ruby/object:Coord
+          x: 380
+          y: 678
+        c3: !ruby/object:Coord
+          x: 380
+          y: 680
+        c4: !ruby/object:Coord
+          x: 360
+          y: 680
     '19:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 19
@@ -1168,6 +3808,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 380
+          y: 640
+        c2: !ruby/object:Coord
+          x: 382
+          y: 640
+        c3: !ruby/object:Coord
+          x: 382
+          y: 660
+        c4: !ruby/object:Coord
+          x: 380
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 398
+          y: 640
+        c2: !ruby/object:Coord
+          x: 400
+          y: 640
+        c3: !ruby/object:Coord
+          x: 400
+          y: 660
+        c4: !ruby/object:Coord
+          x: 398
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 380
+          y: 640
+        c2: !ruby/object:Coord
+          x: 400
+          y: 640
+        c3: !ruby/object:Coord
+          x: 400
+          y: 642
+        c4: !ruby/object:Coord
+          x: 380
+          y: 642
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 380
+          y: 658
+        c2: !ruby/object:Coord
+          x: 400
+          y: 658
+        c3: !ruby/object:Coord
+          x: 400
+          y: 660
+        c4: !ruby/object:Coord
+          x: 380
+          y: 660
     '20:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 20
@@ -1184,6 +3877,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 620
+        c2: !ruby/object:Coord
+          x: 402
+          y: 620
+        c3: !ruby/object:Coord
+          x: 402
+          y: 640
+        c4: !ruby/object:Coord
+          x: 400
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 418
+          y: 620
+        c2: !ruby/object:Coord
+          x: 420
+          y: 620
+        c3: !ruby/object:Coord
+          x: 420
+          y: 640
+        c4: !ruby/object:Coord
+          x: 418
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 620
+        c2: !ruby/object:Coord
+          x: 420
+          y: 620
+        c3: !ruby/object:Coord
+          x: 420
+          y: 622
+        c4: !ruby/object:Coord
+          x: 400
+          y: 622
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 638
+        c2: !ruby/object:Coord
+          x: 420
+          y: 638
+        c3: !ruby/object:Coord
+          x: 420
+          y: 640
+        c4: !ruby/object:Coord
+          x: 400
+          y: 640
     '21:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 21
@@ -1200,6 +3946,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 600
+        c2: !ruby/object:Coord
+          x: 422
+          y: 600
+        c3: !ruby/object:Coord
+          x: 422
+          y: 620
+        c4: !ruby/object:Coord
+          x: 420
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 438
+          y: 600
+        c2: !ruby/object:Coord
+          x: 440
+          y: 600
+        c3: !ruby/object:Coord
+          x: 440
+          y: 620
+        c4: !ruby/object:Coord
+          x: 438
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 600
+        c2: !ruby/object:Coord
+          x: 440
+          y: 600
+        c3: !ruby/object:Coord
+          x: 440
+          y: 602
+        c4: !ruby/object:Coord
+          x: 420
+          y: 602
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 618
+        c2: !ruby/object:Coord
+          x: 440
+          y: 618
+        c3: !ruby/object:Coord
+          x: 440
+          y: 620
+        c4: !ruby/object:Coord
+          x: 420
+          y: 620
     '22:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 22
@@ -1216,6 +4015,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 580
+        c2: !ruby/object:Coord
+          x: 442
+          y: 580
+        c3: !ruby/object:Coord
+          x: 442
+          y: 600
+        c4: !ruby/object:Coord
+          x: 440
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 458
+          y: 580
+        c2: !ruby/object:Coord
+          x: 460
+          y: 580
+        c3: !ruby/object:Coord
+          x: 460
+          y: 600
+        c4: !ruby/object:Coord
+          x: 458
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 580
+        c2: !ruby/object:Coord
+          x: 460
+          y: 580
+        c3: !ruby/object:Coord
+          x: 460
+          y: 582
+        c4: !ruby/object:Coord
+          x: 440
+          y: 582
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 598
+        c2: !ruby/object:Coord
+          x: 460
+          y: 598
+        c3: !ruby/object:Coord
+          x: 460
+          y: 600
+        c4: !ruby/object:Coord
+          x: 440
+          y: 600
     '23:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 23
@@ -1231,6 +4083,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 560
+        c2: !ruby/object:Coord
+          x: 462
+          y: 560
+        c3: !ruby/object:Coord
+          x: 462
+          y: 580
+        c4: !ruby/object:Coord
+          x: 460
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 560
+        c2: !ruby/object:Coord
+          x: 480
+          y: 560
+        c3: !ruby/object:Coord
+          x: 480
+          y: 562
+        c4: !ruby/object:Coord
+          x: 460
+          y: 562
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 578
+        c2: !ruby/object:Coord
+          x: 480
+          y: 578
+        c3: !ruby/object:Coord
+          x: 480
+          y: 580
+        c4: !ruby/object:Coord
+          x: 460
+          y: 580
     '15:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 15
@@ -1246,6 +4138,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 318
+          y: 560
+        c2: !ruby/object:Coord
+          x: 320
+          y: 560
+        c3: !ruby/object:Coord
+          x: 320
+          y: 580
+        c4: !ruby/object:Coord
+          x: 318
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 300
+          y: 560
+        c2: !ruby/object:Coord
+          x: 320
+          y: 560
+        c3: !ruby/object:Coord
+          x: 320
+          y: 562
+        c4: !ruby/object:Coord
+          x: 300
+          y: 562
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 300
+          y: 578
+        c2: !ruby/object:Coord
+          x: 320
+          y: 578
+        c3: !ruby/object:Coord
+          x: 320
+          y: 580
+        c4: !ruby/object:Coord
+          x: 300
+          y: 580
     '16:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 16
@@ -1262,6 +4194,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 580
+        c2: !ruby/object:Coord
+          x: 322
+          y: 580
+        c3: !ruby/object:Coord
+          x: 322
+          y: 600
+        c4: !ruby/object:Coord
+          x: 320
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 338
+          y: 580
+        c2: !ruby/object:Coord
+          x: 340
+          y: 580
+        c3: !ruby/object:Coord
+          x: 340
+          y: 600
+        c4: !ruby/object:Coord
+          x: 338
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 580
+        c2: !ruby/object:Coord
+          x: 340
+          y: 580
+        c3: !ruby/object:Coord
+          x: 340
+          y: 582
+        c4: !ruby/object:Coord
+          x: 320
+          y: 582
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 320
+          y: 598
+        c2: !ruby/object:Coord
+          x: 340
+          y: 598
+        c3: !ruby/object:Coord
+          x: 340
+          y: 600
+        c4: !ruby/object:Coord
+          x: 320
+          y: 600
     '17:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 17
@@ -1278,6 +4263,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 600
+        c2: !ruby/object:Coord
+          x: 342
+          y: 600
+        c3: !ruby/object:Coord
+          x: 342
+          y: 620
+        c4: !ruby/object:Coord
+          x: 340
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 358
+          y: 600
+        c2: !ruby/object:Coord
+          x: 360
+          y: 600
+        c3: !ruby/object:Coord
+          x: 360
+          y: 620
+        c4: !ruby/object:Coord
+          x: 358
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 600
+        c2: !ruby/object:Coord
+          x: 360
+          y: 600
+        c3: !ruby/object:Coord
+          x: 360
+          y: 602
+        c4: !ruby/object:Coord
+          x: 340
+          y: 602
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 340
+          y: 618
+        c2: !ruby/object:Coord
+          x: 360
+          y: 618
+        c3: !ruby/object:Coord
+          x: 360
+          y: 620
+        c4: !ruby/object:Coord
+          x: 340
+          y: 620
     '18:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 18
@@ -1294,6 +4332,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 620
+        c2: !ruby/object:Coord
+          x: 362
+          y: 620
+        c3: !ruby/object:Coord
+          x: 362
+          y: 640
+        c4: !ruby/object:Coord
+          x: 360
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 378
+          y: 620
+        c2: !ruby/object:Coord
+          x: 380
+          y: 620
+        c3: !ruby/object:Coord
+          x: 380
+          y: 640
+        c4: !ruby/object:Coord
+          x: 378
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 620
+        c2: !ruby/object:Coord
+          x: 380
+          y: 620
+        c3: !ruby/object:Coord
+          x: 380
+          y: 622
+        c4: !ruby/object:Coord
+          x: 360
+          y: 622
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 360
+          y: 638
+        c2: !ruby/object:Coord
+          x: 380
+          y: 638
+        c3: !ruby/object:Coord
+          x: 380
+          y: 640
+        c4: !ruby/object:Coord
+          x: 360
+          y: 640
     '20:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 20
@@ -1310,6 +4401,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 660
+        c2: !ruby/object:Coord
+          x: 402
+          y: 660
+        c3: !ruby/object:Coord
+          x: 402
+          y: 680
+        c4: !ruby/object:Coord
+          x: 400
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 418
+          y: 660
+        c2: !ruby/object:Coord
+          x: 420
+          y: 660
+        c3: !ruby/object:Coord
+          x: 420
+          y: 680
+        c4: !ruby/object:Coord
+          x: 418
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 660
+        c2: !ruby/object:Coord
+          x: 420
+          y: 660
+        c3: !ruby/object:Coord
+          x: 420
+          y: 662
+        c4: !ruby/object:Coord
+          x: 400
+          y: 662
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 400
+          y: 678
+        c2: !ruby/object:Coord
+          x: 420
+          y: 678
+        c3: !ruby/object:Coord
+          x: 420
+          y: 680
+        c4: !ruby/object:Coord
+          x: 400
+          y: 680
     '21:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 21
@@ -1326,6 +4470,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 680
+        c2: !ruby/object:Coord
+          x: 422
+          y: 680
+        c3: !ruby/object:Coord
+          x: 422
+          y: 700
+        c4: !ruby/object:Coord
+          x: 420
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 438
+          y: 680
+        c2: !ruby/object:Coord
+          x: 440
+          y: 680
+        c3: !ruby/object:Coord
+          x: 440
+          y: 700
+        c4: !ruby/object:Coord
+          x: 438
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 680
+        c2: !ruby/object:Coord
+          x: 440
+          y: 680
+        c3: !ruby/object:Coord
+          x: 440
+          y: 682
+        c4: !ruby/object:Coord
+          x: 420
+          y: 682
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 420
+          y: 698
+        c2: !ruby/object:Coord
+          x: 440
+          y: 698
+        c3: !ruby/object:Coord
+          x: 440
+          y: 700
+        c4: !ruby/object:Coord
+          x: 420
+          y: 700
     '22:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 22
@@ -1342,6 +4539,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 700
+        c2: !ruby/object:Coord
+          x: 442
+          y: 700
+        c3: !ruby/object:Coord
+          x: 442
+          y: 720
+        c4: !ruby/object:Coord
+          x: 440
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 458
+          y: 700
+        c2: !ruby/object:Coord
+          x: 460
+          y: 700
+        c3: !ruby/object:Coord
+          x: 460
+          y: 720
+        c4: !ruby/object:Coord
+          x: 458
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 700
+        c2: !ruby/object:Coord
+          x: 460
+          y: 700
+        c3: !ruby/object:Coord
+          x: 460
+          y: 702
+        c4: !ruby/object:Coord
+          x: 440
+          y: 702
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 440
+          y: 718
+        c2: !ruby/object:Coord
+          x: 460
+          y: 718
+        c3: !ruby/object:Coord
+          x: 460
+          y: 720
+        c4: !ruby/object:Coord
+          x: 440
+          y: 720
     '23:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 23
@@ -1357,6 +4607,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 720
+        c2: !ruby/object:Coord
+          x: 462
+          y: 720
+        c3: !ruby/object:Coord
+          x: 462
+          y: 740
+        c4: !ruby/object:Coord
+          x: 460
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 720
+        c2: !ruby/object:Coord
+          x: 480
+          y: 720
+        c3: !ruby/object:Coord
+          x: 480
+          y: 722
+        c4: !ruby/object:Coord
+          x: 460
+          y: 722
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 460
+          y: 738
+        c2: !ruby/object:Coord
+          x: 480
+          y: 738
+        c3: !ruby/object:Coord
+          x: 480
+          y: 740
+        c4: !ruby/object:Coord
+          x: 460
+          y: 740
     '24:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1371,6 +4661,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 700
+        c2: !ruby/object:Coord
+          x: 482
+          y: 700
+        c3: !ruby/object:Coord
+          x: 482
+          y: 720
+        c4: !ruby/object:Coord
+          x: 480
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 498
+          y: 700
+        c2: !ruby/object:Coord
+          x: 500
+          y: 700
+        c3: !ruby/object:Coord
+          x: 500
+          y: 720
+        c4: !ruby/object:Coord
+          x: 498
+          y: 720
     '24:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1385,6 +4702,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 680
+        c2: !ruby/object:Coord
+          x: 482
+          y: 680
+        c3: !ruby/object:Coord
+          x: 482
+          y: 700
+        c4: !ruby/object:Coord
+          x: 480
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 498
+          y: 680
+        c2: !ruby/object:Coord
+          x: 500
+          y: 680
+        c3: !ruby/object:Coord
+          x: 500
+          y: 700
+        c4: !ruby/object:Coord
+          x: 498
+          y: 700
     '24:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1399,6 +4743,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 660
+        c2: !ruby/object:Coord
+          x: 482
+          y: 660
+        c3: !ruby/object:Coord
+          x: 482
+          y: 680
+        c4: !ruby/object:Coord
+          x: 480
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 498
+          y: 660
+        c2: !ruby/object:Coord
+          x: 500
+          y: 660
+        c3: !ruby/object:Coord
+          x: 500
+          y: 680
+        c4: !ruby/object:Coord
+          x: 498
+          y: 680
     '24:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1413,6 +4784,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 640
+        c2: !ruby/object:Coord
+          x: 482
+          y: 640
+        c3: !ruby/object:Coord
+          x: 482
+          y: 660
+        c4: !ruby/object:Coord
+          x: 480
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 498
+          y: 640
+        c2: !ruby/object:Coord
+          x: 500
+          y: 640
+        c3: !ruby/object:Coord
+          x: 500
+          y: 660
+        c4: !ruby/object:Coord
+          x: 498
+          y: 660
     '24:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1427,6 +4825,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 620
+        c2: !ruby/object:Coord
+          x: 482
+          y: 620
+        c3: !ruby/object:Coord
+          x: 482
+          y: 640
+        c4: !ruby/object:Coord
+          x: 480
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 498
+          y: 620
+        c2: !ruby/object:Coord
+          x: 500
+          y: 620
+        c3: !ruby/object:Coord
+          x: 500
+          y: 640
+        c4: !ruby/object:Coord
+          x: 498
+          y: 640
     '24:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1440,6 +4865,20 @@ layers:
         y: 560
       freeSides:
       - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 560
+        c2: !ruby/object:Coord
+          x: 500
+          y: 560
+        c3: !ruby/object:Coord
+          x: 500
+          y: 562
+        c4: !ruby/object:Coord
+          x: 480
+          y: 562
     '24:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1454,6 +4893,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 580
+        c2: !ruby/object:Coord
+          x: 482
+          y: 580
+        c3: !ruby/object:Coord
+          x: 482
+          y: 600
+        c4: !ruby/object:Coord
+          x: 480
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 498
+          y: 580
+        c2: !ruby/object:Coord
+          x: 500
+          y: 580
+        c3: !ruby/object:Coord
+          x: 500
+          y: 600
+        c4: !ruby/object:Coord
+          x: 498
+          y: 600
     '24:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1468,6 +4934,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 600
+        c2: !ruby/object:Coord
+          x: 482
+          y: 600
+        c3: !ruby/object:Coord
+          x: 482
+          y: 620
+        c4: !ruby/object:Coord
+          x: 480
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 498
+          y: 600
+        c2: !ruby/object:Coord
+          x: 500
+          y: 600
+        c3: !ruby/object:Coord
+          x: 500
+          y: 620
+        c4: !ruby/object:Coord
+          x: 498
+          y: 620
     '24:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 24
@@ -1481,6 +4974,20 @@ layers:
         y: 720
       freeSides:
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 480
+          y: 738
+        c2: !ruby/object:Coord
+          x: 500
+          y: 738
+        c3: !ruby/object:Coord
+          x: 500
+          y: 740
+        c4: !ruby/object:Coord
+          x: 480
+          y: 740
     '25:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 25
@@ -1496,6 +5003,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 518
+          y: 720
+        c2: !ruby/object:Coord
+          x: 520
+          y: 720
+        c3: !ruby/object:Coord
+          x: 520
+          y: 740
+        c4: !ruby/object:Coord
+          x: 518
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 500
+          y: 720
+        c2: !ruby/object:Coord
+          x: 520
+          y: 720
+        c3: !ruby/object:Coord
+          x: 520
+          y: 722
+        c4: !ruby/object:Coord
+          x: 500
+          y: 722
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 500
+          y: 738
+        c2: !ruby/object:Coord
+          x: 520
+          y: 738
+        c3: !ruby/object:Coord
+          x: 520
+          y: 740
+        c4: !ruby/object:Coord
+          x: 500
+          y: 740
     '26:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 26
@@ -1512,6 +5059,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 700
+        c2: !ruby/object:Coord
+          x: 522
+          y: 700
+        c3: !ruby/object:Coord
+          x: 522
+          y: 720
+        c4: !ruby/object:Coord
+          x: 520
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 538
+          y: 700
+        c2: !ruby/object:Coord
+          x: 540
+          y: 700
+        c3: !ruby/object:Coord
+          x: 540
+          y: 720
+        c4: !ruby/object:Coord
+          x: 538
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 700
+        c2: !ruby/object:Coord
+          x: 540
+          y: 700
+        c3: !ruby/object:Coord
+          x: 540
+          y: 702
+        c4: !ruby/object:Coord
+          x: 520
+          y: 702
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 718
+        c2: !ruby/object:Coord
+          x: 540
+          y: 718
+        c3: !ruby/object:Coord
+          x: 540
+          y: 720
+        c4: !ruby/object:Coord
+          x: 520
+          y: 720
     '27:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 27
@@ -1528,6 +5128,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 680
+        c2: !ruby/object:Coord
+          x: 542
+          y: 680
+        c3: !ruby/object:Coord
+          x: 542
+          y: 700
+        c4: !ruby/object:Coord
+          x: 540
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 558
+          y: 680
+        c2: !ruby/object:Coord
+          x: 560
+          y: 680
+        c3: !ruby/object:Coord
+          x: 560
+          y: 700
+        c4: !ruby/object:Coord
+          x: 558
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 680
+        c2: !ruby/object:Coord
+          x: 560
+          y: 680
+        c3: !ruby/object:Coord
+          x: 560
+          y: 682
+        c4: !ruby/object:Coord
+          x: 540
+          y: 682
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 698
+        c2: !ruby/object:Coord
+          x: 560
+          y: 698
+        c3: !ruby/object:Coord
+          x: 560
+          y: 700
+        c4: !ruby/object:Coord
+          x: 540
+          y: 700
     '28:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 28
@@ -1544,6 +5197,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 660
+        c2: !ruby/object:Coord
+          x: 562
+          y: 660
+        c3: !ruby/object:Coord
+          x: 562
+          y: 680
+        c4: !ruby/object:Coord
+          x: 560
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 578
+          y: 660
+        c2: !ruby/object:Coord
+          x: 580
+          y: 660
+        c3: !ruby/object:Coord
+          x: 580
+          y: 680
+        c4: !ruby/object:Coord
+          x: 578
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 660
+        c2: !ruby/object:Coord
+          x: 580
+          y: 660
+        c3: !ruby/object:Coord
+          x: 580
+          y: 662
+        c4: !ruby/object:Coord
+          x: 560
+          y: 662
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 678
+        c2: !ruby/object:Coord
+          x: 580
+          y: 678
+        c3: !ruby/object:Coord
+          x: 580
+          y: 680
+        c4: !ruby/object:Coord
+          x: 560
+          y: 680
     '29:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 29
@@ -1560,6 +5266,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 580
+          y: 640
+        c2: !ruby/object:Coord
+          x: 582
+          y: 640
+        c3: !ruby/object:Coord
+          x: 582
+          y: 660
+        c4: !ruby/object:Coord
+          x: 580
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 598
+          y: 640
+        c2: !ruby/object:Coord
+          x: 600
+          y: 640
+        c3: !ruby/object:Coord
+          x: 600
+          y: 660
+        c4: !ruby/object:Coord
+          x: 598
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 580
+          y: 640
+        c2: !ruby/object:Coord
+          x: 600
+          y: 640
+        c3: !ruby/object:Coord
+          x: 600
+          y: 642
+        c4: !ruby/object:Coord
+          x: 580
+          y: 642
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 580
+          y: 658
+        c2: !ruby/object:Coord
+          x: 600
+          y: 658
+        c3: !ruby/object:Coord
+          x: 600
+          y: 660
+        c4: !ruby/object:Coord
+          x: 580
+          y: 660
     '30:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 30
@@ -1576,6 +5335,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 620
+        c2: !ruby/object:Coord
+          x: 602
+          y: 620
+        c3: !ruby/object:Coord
+          x: 602
+          y: 640
+        c4: !ruby/object:Coord
+          x: 600
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 618
+          y: 620
+        c2: !ruby/object:Coord
+          x: 620
+          y: 620
+        c3: !ruby/object:Coord
+          x: 620
+          y: 640
+        c4: !ruby/object:Coord
+          x: 618
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 620
+        c2: !ruby/object:Coord
+          x: 620
+          y: 620
+        c3: !ruby/object:Coord
+          x: 620
+          y: 622
+        c4: !ruby/object:Coord
+          x: 600
+          y: 622
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 638
+        c2: !ruby/object:Coord
+          x: 620
+          y: 638
+        c3: !ruby/object:Coord
+          x: 620
+          y: 640
+        c4: !ruby/object:Coord
+          x: 600
+          y: 640
     '31:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 31
@@ -1592,6 +5404,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 600
+        c2: !ruby/object:Coord
+          x: 622
+          y: 600
+        c3: !ruby/object:Coord
+          x: 622
+          y: 620
+        c4: !ruby/object:Coord
+          x: 620
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 638
+          y: 600
+        c2: !ruby/object:Coord
+          x: 640
+          y: 600
+        c3: !ruby/object:Coord
+          x: 640
+          y: 620
+        c4: !ruby/object:Coord
+          x: 638
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 600
+        c2: !ruby/object:Coord
+          x: 640
+          y: 600
+        c3: !ruby/object:Coord
+          x: 640
+          y: 602
+        c4: !ruby/object:Coord
+          x: 620
+          y: 602
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 618
+        c2: !ruby/object:Coord
+          x: 640
+          y: 618
+        c3: !ruby/object:Coord
+          x: 640
+          y: 620
+        c4: !ruby/object:Coord
+          x: 620
+          y: 620
     '32:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 32
@@ -1608,6 +5473,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 580
+        c2: !ruby/object:Coord
+          x: 642
+          y: 580
+        c3: !ruby/object:Coord
+          x: 642
+          y: 600
+        c4: !ruby/object:Coord
+          x: 640
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 658
+          y: 580
+        c2: !ruby/object:Coord
+          x: 660
+          y: 580
+        c3: !ruby/object:Coord
+          x: 660
+          y: 600
+        c4: !ruby/object:Coord
+          x: 658
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 580
+        c2: !ruby/object:Coord
+          x: 660
+          y: 580
+        c3: !ruby/object:Coord
+          x: 660
+          y: 582
+        c4: !ruby/object:Coord
+          x: 640
+          y: 582
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 598
+        c2: !ruby/object:Coord
+          x: 660
+          y: 598
+        c3: !ruby/object:Coord
+          x: 660
+          y: 600
+        c4: !ruby/object:Coord
+          x: 640
+          y: 600
     '33:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 33
@@ -1623,6 +5541,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 560
+        c2: !ruby/object:Coord
+          x: 662
+          y: 560
+        c3: !ruby/object:Coord
+          x: 662
+          y: 580
+        c4: !ruby/object:Coord
+          x: 660
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 560
+        c2: !ruby/object:Coord
+          x: 680
+          y: 560
+        c3: !ruby/object:Coord
+          x: 680
+          y: 562
+        c4: !ruby/object:Coord
+          x: 660
+          y: 562
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 578
+        c2: !ruby/object:Coord
+          x: 680
+          y: 578
+        c3: !ruby/object:Coord
+          x: 680
+          y: 580
+        c4: !ruby/object:Coord
+          x: 660
+          y: 580
     '25:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 25
@@ -1638,6 +5596,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 518
+          y: 560
+        c2: !ruby/object:Coord
+          x: 520
+          y: 560
+        c3: !ruby/object:Coord
+          x: 520
+          y: 580
+        c4: !ruby/object:Coord
+          x: 518
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 500
+          y: 560
+        c2: !ruby/object:Coord
+          x: 520
+          y: 560
+        c3: !ruby/object:Coord
+          x: 520
+          y: 562
+        c4: !ruby/object:Coord
+          x: 500
+          y: 562
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 500
+          y: 578
+        c2: !ruby/object:Coord
+          x: 520
+          y: 578
+        c3: !ruby/object:Coord
+          x: 520
+          y: 580
+        c4: !ruby/object:Coord
+          x: 500
+          y: 580
     '26:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 26
@@ -1654,6 +5652,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 580
+        c2: !ruby/object:Coord
+          x: 522
+          y: 580
+        c3: !ruby/object:Coord
+          x: 522
+          y: 600
+        c4: !ruby/object:Coord
+          x: 520
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 538
+          y: 580
+        c2: !ruby/object:Coord
+          x: 540
+          y: 580
+        c3: !ruby/object:Coord
+          x: 540
+          y: 600
+        c4: !ruby/object:Coord
+          x: 538
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 580
+        c2: !ruby/object:Coord
+          x: 540
+          y: 580
+        c3: !ruby/object:Coord
+          x: 540
+          y: 582
+        c4: !ruby/object:Coord
+          x: 520
+          y: 582
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 520
+          y: 598
+        c2: !ruby/object:Coord
+          x: 540
+          y: 598
+        c3: !ruby/object:Coord
+          x: 540
+          y: 600
+        c4: !ruby/object:Coord
+          x: 520
+          y: 600
     '27:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 27
@@ -1670,6 +5721,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 600
+        c2: !ruby/object:Coord
+          x: 542
+          y: 600
+        c3: !ruby/object:Coord
+          x: 542
+          y: 620
+        c4: !ruby/object:Coord
+          x: 540
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 558
+          y: 600
+        c2: !ruby/object:Coord
+          x: 560
+          y: 600
+        c3: !ruby/object:Coord
+          x: 560
+          y: 620
+        c4: !ruby/object:Coord
+          x: 558
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 600
+        c2: !ruby/object:Coord
+          x: 560
+          y: 600
+        c3: !ruby/object:Coord
+          x: 560
+          y: 602
+        c4: !ruby/object:Coord
+          x: 540
+          y: 602
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 540
+          y: 618
+        c2: !ruby/object:Coord
+          x: 560
+          y: 618
+        c3: !ruby/object:Coord
+          x: 560
+          y: 620
+        c4: !ruby/object:Coord
+          x: 540
+          y: 620
     '28:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 28
@@ -1686,6 +5790,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 620
+        c2: !ruby/object:Coord
+          x: 562
+          y: 620
+        c3: !ruby/object:Coord
+          x: 562
+          y: 640
+        c4: !ruby/object:Coord
+          x: 560
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 578
+          y: 620
+        c2: !ruby/object:Coord
+          x: 580
+          y: 620
+        c3: !ruby/object:Coord
+          x: 580
+          y: 640
+        c4: !ruby/object:Coord
+          x: 578
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 620
+        c2: !ruby/object:Coord
+          x: 580
+          y: 620
+        c3: !ruby/object:Coord
+          x: 580
+          y: 622
+        c4: !ruby/object:Coord
+          x: 560
+          y: 622
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 560
+          y: 638
+        c2: !ruby/object:Coord
+          x: 580
+          y: 638
+        c3: !ruby/object:Coord
+          x: 580
+          y: 640
+        c4: !ruby/object:Coord
+          x: 560
+          y: 640
     '30:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 30
@@ -1702,6 +5859,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 660
+        c2: !ruby/object:Coord
+          x: 602
+          y: 660
+        c3: !ruby/object:Coord
+          x: 602
+          y: 680
+        c4: !ruby/object:Coord
+          x: 600
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 618
+          y: 660
+        c2: !ruby/object:Coord
+          x: 620
+          y: 660
+        c3: !ruby/object:Coord
+          x: 620
+          y: 680
+        c4: !ruby/object:Coord
+          x: 618
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 660
+        c2: !ruby/object:Coord
+          x: 620
+          y: 660
+        c3: !ruby/object:Coord
+          x: 620
+          y: 662
+        c4: !ruby/object:Coord
+          x: 600
+          y: 662
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 600
+          y: 678
+        c2: !ruby/object:Coord
+          x: 620
+          y: 678
+        c3: !ruby/object:Coord
+          x: 620
+          y: 680
+        c4: !ruby/object:Coord
+          x: 600
+          y: 680
     '31:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 31
@@ -1718,6 +5928,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 680
+        c2: !ruby/object:Coord
+          x: 622
+          y: 680
+        c3: !ruby/object:Coord
+          x: 622
+          y: 700
+        c4: !ruby/object:Coord
+          x: 620
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 638
+          y: 680
+        c2: !ruby/object:Coord
+          x: 640
+          y: 680
+        c3: !ruby/object:Coord
+          x: 640
+          y: 700
+        c4: !ruby/object:Coord
+          x: 638
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 680
+        c2: !ruby/object:Coord
+          x: 640
+          y: 680
+        c3: !ruby/object:Coord
+          x: 640
+          y: 682
+        c4: !ruby/object:Coord
+          x: 620
+          y: 682
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 620
+          y: 698
+        c2: !ruby/object:Coord
+          x: 640
+          y: 698
+        c3: !ruby/object:Coord
+          x: 640
+          y: 700
+        c4: !ruby/object:Coord
+          x: 620
+          y: 700
     '32:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 32
@@ -1734,6 +5997,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 700
+        c2: !ruby/object:Coord
+          x: 642
+          y: 700
+        c3: !ruby/object:Coord
+          x: 642
+          y: 720
+        c4: !ruby/object:Coord
+          x: 640
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 658
+          y: 700
+        c2: !ruby/object:Coord
+          x: 660
+          y: 700
+        c3: !ruby/object:Coord
+          x: 660
+          y: 720
+        c4: !ruby/object:Coord
+          x: 658
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 700
+        c2: !ruby/object:Coord
+          x: 660
+          y: 700
+        c3: !ruby/object:Coord
+          x: 660
+          y: 702
+        c4: !ruby/object:Coord
+          x: 640
+          y: 702
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 640
+          y: 718
+        c2: !ruby/object:Coord
+          x: 660
+          y: 718
+        c3: !ruby/object:Coord
+          x: 660
+          y: 720
+        c4: !ruby/object:Coord
+          x: 640
+          y: 720
     '33:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 33
@@ -1749,6 +6065,46 @@ layers:
       - :left
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 720
+        c2: !ruby/object:Coord
+          x: 662
+          y: 720
+        c3: !ruby/object:Coord
+          x: 662
+          y: 740
+        c4: !ruby/object:Coord
+          x: 660
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 720
+        c2: !ruby/object:Coord
+          x: 680
+          y: 720
+        c3: !ruby/object:Coord
+          x: 680
+          y: 722
+        c4: !ruby/object:Coord
+          x: 660
+          y: 722
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 660
+          y: 738
+        c2: !ruby/object:Coord
+          x: 680
+          y: 738
+        c3: !ruby/object:Coord
+          x: 680
+          y: 740
+        c4: !ruby/object:Coord
+          x: 660
+          y: 740
     '34:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1762,6 +6118,20 @@ layers:
         y: 720
       freeSides:
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 738
+        c2: !ruby/object:Coord
+          x: 700
+          y: 738
+        c3: !ruby/object:Coord
+          x: 700
+          y: 740
+        c4: !ruby/object:Coord
+          x: 680
+          y: 740
     '34:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1776,6 +6146,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 700
+        c2: !ruby/object:Coord
+          x: 682
+          y: 700
+        c3: !ruby/object:Coord
+          x: 682
+          y: 720
+        c4: !ruby/object:Coord
+          x: 680
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 700
+        c2: !ruby/object:Coord
+          x: 700
+          y: 700
+        c3: !ruby/object:Coord
+          x: 700
+          y: 720
+        c4: !ruby/object:Coord
+          x: 698
+          y: 720
     '34:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1790,6 +6187,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 660
+        c2: !ruby/object:Coord
+          x: 682
+          y: 660
+        c3: !ruby/object:Coord
+          x: 682
+          y: 680
+        c4: !ruby/object:Coord
+          x: 680
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 660
+        c2: !ruby/object:Coord
+          x: 700
+          y: 660
+        c3: !ruby/object:Coord
+          x: 700
+          y: 680
+        c4: !ruby/object:Coord
+          x: 698
+          y: 680
     '34:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1804,6 +6228,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 680
+        c2: !ruby/object:Coord
+          x: 682
+          y: 680
+        c3: !ruby/object:Coord
+          x: 682
+          y: 700
+        c4: !ruby/object:Coord
+          x: 680
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 680
+        c2: !ruby/object:Coord
+          x: 700
+          y: 680
+        c3: !ruby/object:Coord
+          x: 700
+          y: 700
+        c4: !ruby/object:Coord
+          x: 698
+          y: 700
     '34:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1818,6 +6269,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 640
+        c2: !ruby/object:Coord
+          x: 682
+          y: 640
+        c3: !ruby/object:Coord
+          x: 682
+          y: 660
+        c4: !ruby/object:Coord
+          x: 680
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 640
+        c2: !ruby/object:Coord
+          x: 700
+          y: 640
+        c3: !ruby/object:Coord
+          x: 700
+          y: 660
+        c4: !ruby/object:Coord
+          x: 698
+          y: 660
     '34:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1832,6 +6310,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 600
+        c2: !ruby/object:Coord
+          x: 682
+          y: 600
+        c3: !ruby/object:Coord
+          x: 682
+          y: 620
+        c4: !ruby/object:Coord
+          x: 680
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 600
+        c2: !ruby/object:Coord
+          x: 700
+          y: 600
+        c3: !ruby/object:Coord
+          x: 700
+          y: 620
+        c4: !ruby/object:Coord
+          x: 698
+          y: 620
     '34:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1846,6 +6351,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 620
+        c2: !ruby/object:Coord
+          x: 682
+          y: 620
+        c3: !ruby/object:Coord
+          x: 682
+          y: 640
+        c4: !ruby/object:Coord
+          x: 680
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 620
+        c2: !ruby/object:Coord
+          x: 700
+          y: 620
+        c3: !ruby/object:Coord
+          x: 700
+          y: 640
+        c4: !ruby/object:Coord
+          x: 698
+          y: 640
     '34:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1860,6 +6392,33 @@ layers:
       freeSides:
       - :left
       - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 580
+        c2: !ruby/object:Coord
+          x: 682
+          y: 580
+        c3: !ruby/object:Coord
+          x: 682
+          y: 600
+        c4: !ruby/object:Coord
+          x: 680
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 698
+          y: 580
+        c2: !ruby/object:Coord
+          x: 700
+          y: 580
+        c3: !ruby/object:Coord
+          x: 700
+          y: 600
+        c4: !ruby/object:Coord
+          x: 698
+          y: 600
     '34:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 34
@@ -1873,6 +6432,20 @@ layers:
         y: 560
       freeSides:
       - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 680
+          y: 560
+        c2: !ruby/object:Coord
+          x: 700
+          y: 560
+        c3: !ruby/object:Coord
+          x: 700
+          y: 562
+        c4: !ruby/object:Coord
+          x: 680
+          y: 562
     '35:11': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 35
@@ -1888,6 +6461,46 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 718
+          y: 560
+        c2: !ruby/object:Coord
+          x: 720
+          y: 560
+        c3: !ruby/object:Coord
+          x: 720
+          y: 580
+        c4: !ruby/object:Coord
+          x: 718
+          y: 580
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 700
+          y: 560
+        c2: !ruby/object:Coord
+          x: 720
+          y: 560
+        c3: !ruby/object:Coord
+          x: 720
+          y: 562
+        c4: !ruby/object:Coord
+          x: 700
+          y: 562
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 700
+          y: 578
+        c2: !ruby/object:Coord
+          x: 720
+          y: 578
+        c3: !ruby/object:Coord
+          x: 720
+          y: 580
+        c4: !ruby/object:Coord
+          x: 700
+          y: 580
     '36:10': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 36
@@ -1904,6 +6517,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 720
+          y: 580
+        c2: !ruby/object:Coord
+          x: 722
+          y: 580
+        c3: !ruby/object:Coord
+          x: 722
+          y: 600
+        c4: !ruby/object:Coord
+          x: 720
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 738
+          y: 580
+        c2: !ruby/object:Coord
+          x: 740
+          y: 580
+        c3: !ruby/object:Coord
+          x: 740
+          y: 600
+        c4: !ruby/object:Coord
+          x: 738
+          y: 600
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 720
+          y: 580
+        c2: !ruby/object:Coord
+          x: 740
+          y: 580
+        c3: !ruby/object:Coord
+          x: 740
+          y: 582
+        c4: !ruby/object:Coord
+          x: 720
+          y: 582
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 720
+          y: 598
+        c2: !ruby/object:Coord
+          x: 740
+          y: 598
+        c3: !ruby/object:Coord
+          x: 740
+          y: 600
+        c4: !ruby/object:Coord
+          x: 720
+          y: 600
     '37:9': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 37
@@ -1920,6 +6586,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 740
+          y: 600
+        c2: !ruby/object:Coord
+          x: 742
+          y: 600
+        c3: !ruby/object:Coord
+          x: 742
+          y: 620
+        c4: !ruby/object:Coord
+          x: 740
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 758
+          y: 600
+        c2: !ruby/object:Coord
+          x: 760
+          y: 600
+        c3: !ruby/object:Coord
+          x: 760
+          y: 620
+        c4: !ruby/object:Coord
+          x: 758
+          y: 620
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 740
+          y: 600
+        c2: !ruby/object:Coord
+          x: 760
+          y: 600
+        c3: !ruby/object:Coord
+          x: 760
+          y: 602
+        c4: !ruby/object:Coord
+          x: 740
+          y: 602
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 740
+          y: 618
+        c2: !ruby/object:Coord
+          x: 760
+          y: 618
+        c3: !ruby/object:Coord
+          x: 760
+          y: 620
+        c4: !ruby/object:Coord
+          x: 740
+          y: 620
     '38:8': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 38
@@ -1936,6 +6655,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 760
+          y: 620
+        c2: !ruby/object:Coord
+          x: 762
+          y: 620
+        c3: !ruby/object:Coord
+          x: 762
+          y: 640
+        c4: !ruby/object:Coord
+          x: 760
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 778
+          y: 620
+        c2: !ruby/object:Coord
+          x: 780
+          y: 620
+        c3: !ruby/object:Coord
+          x: 780
+          y: 640
+        c4: !ruby/object:Coord
+          x: 778
+          y: 640
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 760
+          y: 620
+        c2: !ruby/object:Coord
+          x: 780
+          y: 620
+        c3: !ruby/object:Coord
+          x: 780
+          y: 622
+        c4: !ruby/object:Coord
+          x: 760
+          y: 622
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 760
+          y: 638
+        c2: !ruby/object:Coord
+          x: 780
+          y: 638
+        c3: !ruby/object:Coord
+          x: 780
+          y: 640
+        c4: !ruby/object:Coord
+          x: 760
+          y: 640
     '39:7': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 39
@@ -1952,6 +6724,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 780
+          y: 640
+        c2: !ruby/object:Coord
+          x: 782
+          y: 640
+        c3: !ruby/object:Coord
+          x: 782
+          y: 660
+        c4: !ruby/object:Coord
+          x: 780
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 798
+          y: 640
+        c2: !ruby/object:Coord
+          x: 800
+          y: 640
+        c3: !ruby/object:Coord
+          x: 800
+          y: 660
+        c4: !ruby/object:Coord
+          x: 798
+          y: 660
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 780
+          y: 640
+        c2: !ruby/object:Coord
+          x: 800
+          y: 640
+        c3: !ruby/object:Coord
+          x: 800
+          y: 642
+        c4: !ruby/object:Coord
+          x: 780
+          y: 642
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 780
+          y: 658
+        c2: !ruby/object:Coord
+          x: 800
+          y: 658
+        c3: !ruby/object:Coord
+          x: 800
+          y: 660
+        c4: !ruby/object:Coord
+          x: 780
+          y: 660
     '38:6': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 38
@@ -1968,6 +6793,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 760
+          y: 660
+        c2: !ruby/object:Coord
+          x: 762
+          y: 660
+        c3: !ruby/object:Coord
+          x: 762
+          y: 680
+        c4: !ruby/object:Coord
+          x: 760
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 778
+          y: 660
+        c2: !ruby/object:Coord
+          x: 780
+          y: 660
+        c3: !ruby/object:Coord
+          x: 780
+          y: 680
+        c4: !ruby/object:Coord
+          x: 778
+          y: 680
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 760
+          y: 660
+        c2: !ruby/object:Coord
+          x: 780
+          y: 660
+        c3: !ruby/object:Coord
+          x: 780
+          y: 662
+        c4: !ruby/object:Coord
+          x: 760
+          y: 662
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 760
+          y: 678
+        c2: !ruby/object:Coord
+          x: 780
+          y: 678
+        c3: !ruby/object:Coord
+          x: 780
+          y: 680
+        c4: !ruby/object:Coord
+          x: 760
+          y: 680
     '37:5': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 37
@@ -1984,6 +6862,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 740
+          y: 680
+        c2: !ruby/object:Coord
+          x: 742
+          y: 680
+        c3: !ruby/object:Coord
+          x: 742
+          y: 700
+        c4: !ruby/object:Coord
+          x: 740
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 758
+          y: 680
+        c2: !ruby/object:Coord
+          x: 760
+          y: 680
+        c3: !ruby/object:Coord
+          x: 760
+          y: 700
+        c4: !ruby/object:Coord
+          x: 758
+          y: 700
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 740
+          y: 680
+        c2: !ruby/object:Coord
+          x: 760
+          y: 680
+        c3: !ruby/object:Coord
+          x: 760
+          y: 682
+        c4: !ruby/object:Coord
+          x: 740
+          y: 682
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 740
+          y: 698
+        c2: !ruby/object:Coord
+          x: 760
+          y: 698
+        c3: !ruby/object:Coord
+          x: 760
+          y: 700
+        c4: !ruby/object:Coord
+          x: 740
+          y: 700
     '36:4': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 36
@@ -2000,6 +6931,59 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 720
+          y: 700
+        c2: !ruby/object:Coord
+          x: 722
+          y: 700
+        c3: !ruby/object:Coord
+          x: 722
+          y: 720
+        c4: !ruby/object:Coord
+          x: 720
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 738
+          y: 700
+        c2: !ruby/object:Coord
+          x: 740
+          y: 700
+        c3: !ruby/object:Coord
+          x: 740
+          y: 720
+        c4: !ruby/object:Coord
+          x: 738
+          y: 720
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 720
+          y: 700
+        c2: !ruby/object:Coord
+          x: 740
+          y: 700
+        c3: !ruby/object:Coord
+          x: 740
+          y: 702
+        c4: !ruby/object:Coord
+          x: 720
+          y: 702
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 720
+          y: 718
+        c2: !ruby/object:Coord
+          x: 740
+          y: 718
+        c3: !ruby/object:Coord
+          x: 740
+          y: 720
+        c4: !ruby/object:Coord
+          x: 720
+          y: 720
     '35:3': !ruby/object:Platform
       coord: !ruby/object:Coord
         x: 35
@@ -2015,6 +6999,1966 @@ layers:
       - :right
       - :top
       - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 718
+          y: 720
+        c2: !ruby/object:Coord
+          x: 720
+          y: 720
+        c3: !ruby/object:Coord
+          x: 720
+          y: 740
+        c4: !ruby/object:Coord
+          x: 718
+          y: 740
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 700
+          y: 720
+        c2: !ruby/object:Coord
+          x: 720
+          y: 720
+        c3: !ruby/object:Coord
+          x: 720
+          y: 722
+        c4: !ruby/object:Coord
+          x: 700
+          y: 722
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 700
+          y: 738
+        c2: !ruby/object:Coord
+          x: 720
+          y: 738
+        c3: !ruby/object:Coord
+          x: 720
+          y: 740
+        c4: !ruby/object:Coord
+          x: 700
+          y: 740
+    '8:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '7:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '9:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '9:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '8:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '7:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '6:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 420
+      freeSides: []
+      sideQuads: []
+    '5:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 460
+      freeSides: []
+      sideQuads: []
+    '5:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 440
+      freeSides: []
+      sideQuads: []
+    '6:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 440
+      freeSides: []
+      sideQuads: []
+    '6:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 460
+      freeSides: []
+      sideQuads: []
+    '6:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '10:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '11:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 440
+      freeSides: []
+      sideQuads: []
+    '11:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 460
+      freeSides: []
+      sideQuads: []
+    '8:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '8:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 538
+        c2: !ruby/object:Coord
+          x: 180
+          y: 538
+        c3: !ruby/object:Coord
+          x: 180
+          y: 540
+        c4: !ruby/object:Coord
+          x: 160
+          y: 540
+    '4:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 440
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 440
+        c2: !ruby/object:Coord
+          x: 82
+          y: 440
+        c3: !ruby/object:Coord
+          x: 82
+          y: 460
+        c4: !ruby/object:Coord
+          x: 80
+          y: 460
+    '5:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 420
+      freeSides: []
+      sideQuads: []
+    '6:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 400
+      freeSides: []
+      sideQuads: []
+    '7:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '8:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '9:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '11:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 420
+      freeSides: []
+      sideQuads: []
+    '12:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 440
+      freeSides: []
+      sideQuads: []
+    '4:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 420
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 420
+        c2: !ruby/object:Coord
+          x: 82
+          y: 420
+        c3: !ruby/object:Coord
+          x: 82
+          y: 440
+        c4: !ruby/object:Coord
+          x: 80
+          y: 440
+    '4:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 400
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 400
+        c2: !ruby/object:Coord
+          x: 82
+          y: 400
+        c3: !ruby/object:Coord
+          x: 82
+          y: 420
+        c4: !ruby/object:Coord
+          x: 80
+          y: 420
+    '5:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 400
+      freeSides: []
+      sideQuads: []
+    '4:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 380
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 380
+        c2: !ruby/object:Coord
+          x: 82
+          y: 380
+        c3: !ruby/object:Coord
+          x: 82
+          y: 400
+        c4: !ruby/object:Coord
+          x: 80
+          y: 400
+    '5:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '6:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '4:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 360
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 360
+        c2: !ruby/object:Coord
+          x: 82
+          y: 360
+        c3: !ruby/object:Coord
+          x: 82
+          y: 380
+        c4: !ruby/object:Coord
+          x: 80
+          y: 380
+    '5:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '6:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '7:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '9:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '10:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '10:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '11:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '11:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '11:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 400
+      freeSides: []
+      sideQuads: []
+    '12:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 360
+      freeSides: []
+      sideQuads: []
+    '12:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 380
+      freeSides: []
+      sideQuads: []
+    '12:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 400
+      freeSides: []
+      sideQuads: []
+    '12:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 420
+      freeSides: []
+      sideQuads: []
+    '12:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 460
+      freeSides: []
+      sideQuads: []
+    '11:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '12:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '12:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '11:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '10:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '9:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 538
+        c2: !ruby/object:Coord
+          x: 200
+          y: 538
+        c3: !ruby/object:Coord
+          x: 200
+          y: 540
+        c4: !ruby/object:Coord
+          x: 180
+          y: 540
+    '10:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 538
+        c2: !ruby/object:Coord
+          x: 220
+          y: 538
+        c3: !ruby/object:Coord
+          x: 220
+          y: 540
+        c4: !ruby/object:Coord
+          x: 200
+          y: 540
+    '11:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 538
+        c2: !ruby/object:Coord
+          x: 240
+          y: 538
+        c3: !ruby/object:Coord
+          x: 240
+          y: 540
+        c4: !ruby/object:Coord
+          x: 220
+          y: 540
+    '12:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 538
+        c2: !ruby/object:Coord
+          x: 260
+          y: 538
+        c3: !ruby/object:Coord
+          x: 260
+          y: 540
+        c4: !ruby/object:Coord
+          x: 240
+          y: 540
+    '7:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 538
+        c2: !ruby/object:Coord
+          x: 160
+          y: 538
+        c3: !ruby/object:Coord
+          x: 160
+          y: 540
+        c4: !ruby/object:Coord
+          x: 140
+          y: 540
+    '6:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 538
+        c2: !ruby/object:Coord
+          x: 140
+          y: 538
+        c3: !ruby/object:Coord
+          x: 140
+          y: 540
+        c4: !ruby/object:Coord
+          x: 120
+          y: 540
+    '6:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '5:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 500
+      freeSides: []
+      sideQuads: []
+    '5:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 520
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 538
+        c2: !ruby/object:Coord
+          x: 120
+          y: 538
+        c3: !ruby/object:Coord
+          x: 120
+          y: 540
+        c4: !ruby/object:Coord
+          x: 100
+          y: 540
+    '4:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 520
+      freeSides:
+      - :left
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 520
+        c2: !ruby/object:Coord
+          x: 82
+          y: 520
+        c3: !ruby/object:Coord
+          x: 82
+          y: 540
+        c4: !ruby/object:Coord
+          x: 80
+          y: 540
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 538
+        c2: !ruby/object:Coord
+          x: 100
+          y: 538
+        c3: !ruby/object:Coord
+          x: 100
+          y: 540
+        c4: !ruby/object:Coord
+          x: 80
+          y: 540
+    '4:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 500
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 500
+        c2: !ruby/object:Coord
+          x: 82
+          y: 500
+        c3: !ruby/object:Coord
+          x: 82
+          y: 520
+        c4: !ruby/object:Coord
+          x: 80
+          y: 520
+    '4:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 480
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 480
+        c2: !ruby/object:Coord
+          x: 82
+          y: 480
+        c3: !ruby/object:Coord
+          x: 82
+          y: 500
+        c4: !ruby/object:Coord
+          x: 80
+          y: 500
+    '4:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 460
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 460
+        c2: !ruby/object:Coord
+          x: 82
+          y: 460
+        c3: !ruby/object:Coord
+          x: 82
+          y: 480
+        c4: !ruby/object:Coord
+          x: 80
+          y: 480
+    '5:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 480
+      freeSides: []
+      sideQuads: []
+    '13:13': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 13
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 520
+      freeSides:
+      - :right
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 520
+        c2: !ruby/object:Coord
+          x: 280
+          y: 520
+        c3: !ruby/object:Coord
+          x: 280
+          y: 540
+        c4: !ruby/object:Coord
+          x: 278
+          y: 540
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 538
+        c2: !ruby/object:Coord
+          x: 280
+          y: 538
+        c3: !ruby/object:Coord
+          x: 280
+          y: 540
+        c4: !ruby/object:Coord
+          x: 260
+          y: 540
+    '13:14': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 14
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 500
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 500
+        c2: !ruby/object:Coord
+          x: 280
+          y: 500
+        c3: !ruby/object:Coord
+          x: 280
+          y: 520
+        c4: !ruby/object:Coord
+          x: 278
+          y: 520
+    '13:15': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 15
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 480
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 480
+        c2: !ruby/object:Coord
+          x: 280
+          y: 480
+        c3: !ruby/object:Coord
+          x: 280
+          y: 500
+        c4: !ruby/object:Coord
+          x: 278
+          y: 500
+    '13:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 460
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 460
+        c2: !ruby/object:Coord
+          x: 280
+          y: 460
+        c3: !ruby/object:Coord
+          x: 280
+          y: 480
+        c4: !ruby/object:Coord
+          x: 278
+          y: 480
+    '13:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 440
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 440
+        c2: !ruby/object:Coord
+          x: 280
+          y: 440
+        c3: !ruby/object:Coord
+          x: 280
+          y: 460
+        c4: !ruby/object:Coord
+          x: 278
+          y: 460
+    '13:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 420
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 420
+        c2: !ruby/object:Coord
+          x: 280
+          y: 420
+        c3: !ruby/object:Coord
+          x: 280
+          y: 440
+        c4: !ruby/object:Coord
+          x: 278
+          y: 440
+    '13:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 400
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 400
+        c2: !ruby/object:Coord
+          x: 280
+          y: 400
+        c3: !ruby/object:Coord
+          x: 280
+          y: 420
+        c4: !ruby/object:Coord
+          x: 278
+          y: 420
+    '13:20': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 20
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 380
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 380
+        c2: !ruby/object:Coord
+          x: 280
+          y: 380
+        c3: !ruby/object:Coord
+          x: 280
+          y: 400
+        c4: !ruby/object:Coord
+          x: 278
+          y: 400
+    '13:21': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 21
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 360
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 360
+        c2: !ruby/object:Coord
+          x: 280
+          y: 360
+        c3: !ruby/object:Coord
+          x: 280
+          y: 380
+        c4: !ruby/object:Coord
+          x: 278
+          y: 380
+    '13:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 13
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 260
+        y: 340
+      freeSides:
+      - :right
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 278
+          y: 340
+        c2: !ruby/object:Coord
+          x: 280
+          y: 340
+        c3: !ruby/object:Coord
+          x: 280
+          y: 360
+        c4: !ruby/object:Coord
+          x: 278
+          y: 360
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 260
+          y: 340
+        c2: !ruby/object:Coord
+          x: 280
+          y: 340
+        c3: !ruby/object:Coord
+          x: 280
+          y: 342
+        c4: !ruby/object:Coord
+          x: 260
+          y: 342
+    '12:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 12
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 240
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 240
+          y: 340
+        c2: !ruby/object:Coord
+          x: 260
+          y: 340
+        c3: !ruby/object:Coord
+          x: 260
+          y: 342
+        c4: !ruby/object:Coord
+          x: 240
+          y: 342
+    '11:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 11
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 220
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 220
+          y: 340
+        c2: !ruby/object:Coord
+          x: 240
+          y: 340
+        c3: !ruby/object:Coord
+          x: 240
+          y: 342
+        c4: !ruby/object:Coord
+          x: 220
+          y: 342
+    '10:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 340
+        c2: !ruby/object:Coord
+          x: 220
+          y: 340
+        c3: !ruby/object:Coord
+          x: 220
+          y: 342
+        c4: !ruby/object:Coord
+          x: 200
+          y: 342
+    '9:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 340
+        c2: !ruby/object:Coord
+          x: 200
+          y: 340
+        c3: !ruby/object:Coord
+          x: 200
+          y: 342
+        c4: !ruby/object:Coord
+          x: 180
+          y: 342
+    '8:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 340
+        c2: !ruby/object:Coord
+          x: 180
+          y: 340
+        c3: !ruby/object:Coord
+          x: 180
+          y: 342
+        c4: !ruby/object:Coord
+          x: 160
+          y: 342
+    '7:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 140
+          y: 340
+        c2: !ruby/object:Coord
+          x: 160
+          y: 340
+        c3: !ruby/object:Coord
+          x: 160
+          y: 342
+        c4: !ruby/object:Coord
+          x: 140
+          y: 342
+    '6:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 6
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 120
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 120
+          y: 340
+        c2: !ruby/object:Coord
+          x: 140
+          y: 340
+        c3: !ruby/object:Coord
+          x: 140
+          y: 342
+        c4: !ruby/object:Coord
+          x: 120
+          y: 342
+    '5:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 5
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 100
+        y: 340
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 100
+          y: 340
+        c2: !ruby/object:Coord
+          x: 120
+          y: 340
+        c3: !ruby/object:Coord
+          x: 120
+          y: 342
+        c4: !ruby/object:Coord
+          x: 100
+          y: 342
+    '4:22': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 4
+        y: 22
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 80
+        y: 340
+      freeSides:
+      - :left
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 340
+        c2: !ruby/object:Coord
+          x: 82
+          y: 340
+        c3: !ruby/object:Coord
+          x: 82
+          y: 360
+        c4: !ruby/object:Coord
+          x: 80
+          y: 360
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 80
+          y: 340
+        c2: !ruby/object:Coord
+          x: 100
+          y: 340
+        c3: !ruby/object:Coord
+          x: 100
+          y: 342
+        c4: !ruby/object:Coord
+          x: 80
+          y: 342
+    '7:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 400
+      freeSides: []
+      sideQuads: []
+    '7:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 420
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 158
+          y: 420
+        c2: !ruby/object:Coord
+          x: 160
+          y: 420
+        c3: !ruby/object:Coord
+          x: 160
+          y: 440
+        c4: !ruby/object:Coord
+          x: 158
+          y: 440
+    '7:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 460
+      freeSides: []
+      sideQuads: []
+    '7:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 7
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 140
+        y: 440
+      freeSides:
+      - :right
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 158
+          y: 440
+        c2: !ruby/object:Coord
+          x: 160
+          y: 440
+        c3: !ruby/object:Coord
+          x: 160
+          y: 460
+        c4: !ruby/object:Coord
+          x: 158
+          y: 460
+    '8:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 460
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 460
+        c2: !ruby/object:Coord
+          x: 180
+          y: 460
+        c3: !ruby/object:Coord
+          x: 180
+          y: 462
+        c4: !ruby/object:Coord
+          x: 160
+          y: 462
+    '9:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 460
+      freeSides:
+      - :top
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 460
+        c2: !ruby/object:Coord
+          x: 200
+          y: 460
+        c3: !ruby/object:Coord
+          x: 200
+          y: 462
+        c4: !ruby/object:Coord
+          x: 180
+          y: 462
+    '10:16': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 16
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 460
+      freeSides: []
+      sideQuads: []
+    '10:17': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 17
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 440
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 440
+        c2: !ruby/object:Coord
+          x: 202
+          y: 440
+        c3: !ruby/object:Coord
+          x: 202
+          y: 460
+        c4: !ruby/object:Coord
+          x: 200
+          y: 460
+    '10:18': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 18
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 420
+      freeSides:
+      - :left
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 200
+          y: 420
+        c2: !ruby/object:Coord
+          x: 202
+          y: 420
+        c3: !ruby/object:Coord
+          x: 202
+          y: 440
+        c4: !ruby/object:Coord
+          x: 200
+          y: 440
+    '10:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 10
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 200
+        y: 400
+      freeSides: []
+      sideQuads: []
+    '9:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 9
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 180
+        y: 400
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 180
+          y: 418
+        c2: !ruby/object:Coord
+          x: 200
+          y: 418
+        c3: !ruby/object:Coord
+          x: 200
+          y: 420
+        c4: !ruby/object:Coord
+          x: 180
+          y: 420
+    '8:19': !ruby/object:Platform
+      coord: !ruby/object:Coord
+        x: 8
+        y: 19
+      colorIndex: 1
+      size: 20
+      multFactor: 0.625
+      showing: true
+      realCoord: !ruby/object:Coord
+        x: 160
+        y: 400
+      freeSides:
+      - :bottom
+      sideQuads:
+      - !ruby/object:Quad
+        c1: !ruby/object:Coord
+          x: 160
+          y: 418
+        c2: !ruby/object:Coord
+          x: 180
+          y: 418
+        c3: !ruby/object:Coord
+          x: 180
+          y: 420
+        c4: !ruby/object:Coord
+          x: 160
+          y: 420
   showing: true
 - !ruby/object:Layer
   platforms: {}

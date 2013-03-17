@@ -373,37 +373,40 @@ class Platform
     i = c.x + c.y * length
     $platformImages[i]
   end
-  def drawSides
+  def createSideQuads
+    @sideQuads = []
     topLeft = Coord.new(@realCoord.x, @realCoord.y)
     topRight = Coord.new(@realCoord.x + @size, @realCoord.y)
     bottomRight = Coord.new(@realCoord.x + @size, @realCoord.y + @size)
     bottomLeft = Coord.new(@realCoord.x, @realCoord.y + @size)
-    color = $normalColors[@colorIndex]
     amt = 2
     @freeSides = [] if @freeSides.nil?
     for side in @freeSides
       case side
       when :left
-        $window.draw_quad(topLeft.x, topLeft.y, color, topLeft.x + amt, topLeft.y, color,
-                          bottomLeft.x + amt, bottomLeft.y, color, bottomLeft.x, bottomLeft.y, color,
-                          Z::PlatformOutline)
+        @sideQuads << Quad.new(Coord.new(topLeft.x, topLeft.y), Coord.new(topLeft.x + amt, topLeft.y),
+                               Coord.new(bottomLeft.x + amt, bottomLeft.y), Coord.new(bottomLeft.x, bottomLeft.y))
       when :right
-        $window.draw_quad(topRight.x - amt, topRight.y, color, topRight.x, topRight.y, color,
-                          bottomRight.x, bottomRight.y, color, bottomRight.x - amt, bottomRight.y, color,
-                          Z::PlatformOutline)
+        @sideQuads << Quad.new(Coord.new(topRight.x - amt, topRight.y), Coord.new(topRight.x, topRight.y),
+                               Coord.new(bottomRight.x, bottomRight.y), Coord.new(bottomRight.x - amt, bottomRight.y))
       when :top
-        $window.draw_quad(topLeft.x, topLeft.y, color, topRight.x, topRight.y, color,
-                          topRight.x, topRight.y + amt, color, topLeft.x, topLeft.y + amt, color,
-                          Z::PlatformOutline)
+        @sideQuads << Quad.new(Coord.new(topLeft.x, topLeft.y), Coord.new(topRight.x, topRight.y),
+                               Coord.new(topRight.x, topRight.y + amt), Coord.new(topLeft.x, topLeft.y + amt))
       when :bottom
-        $window.draw_quad(bottomLeft.x, bottomLeft.y - amt, color, bottomRight.x, bottomRight.y - amt, color,
-                          bottomRight.x, bottomRight.y, color, bottomLeft.x, bottomLeft.y, color,
-                          Z::PlatformOutline)
+        @sideQuads << Quad.new(Coord.new(bottomLeft.x, bottomLeft.y - amt), Coord.new(bottomRight.x, bottomRight.y - amt),
+                               Coord.new(bottomRight.x, bottomRight.y), Coord.new(bottomLeft.x, bottomLeft.y))
       end
     end
   end
+  def drawSideQuads
+    color = $normalColors[@colorIndex]
+    createSideQuads if @sideQuads.nil?
+    for quad in @sideQuads
+      quad.draw(color, Z::PlatformOutline)
+    end
+  end
   def draw
-    drawSides
+    drawSideQuads
     #$platformImage.draw(@realCoord.x, @realCoord.y, Z::Platform,
     #              @multFactor, @multFactor, $colors[@colorIndex])
     getImg(@coord.dup).draw(@realCoord.x, @realCoord.y, Z::PlatformBack,

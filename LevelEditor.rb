@@ -82,6 +82,7 @@ class Layer
         end
       end
       platform.freeSides = freeSides
+      platform.createSideQuads
     end
   end
 end
