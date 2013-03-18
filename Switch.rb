@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #run the following to package this application:
-#ocra --window --chdir-first "Switch.rb" lib/*
+#ocra --windows --chdir-first "Switch.rb" lib/* dat/* lvls/*
 #--icon "SlimeWarzIcon.ico"
 
 require_relative 'main'

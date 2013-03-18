@@ -406,7 +406,7 @@ class Platform
     end
   end
   def draw
-    drawSideQuads
+    #drawSideQuads
     #$platformImage.draw(@realCoord.x, @realCoord.y, Z::Platform,
     #              @multFactor, @multFactor, $colors[@colorIndex])
     getImg(@coord.dup).draw(@realCoord.x, @realCoord.y, Z::PlatformBack,
