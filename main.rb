@@ -3,33 +3,35 @@ require 'gosu'
 require 'yaml'
 
 module Z
-  Background, PlatformBack, Platform, PlatformOutline, PlayerBack, Player, White = *0...7
+  Background, PlatformBack, Platform, PlatformOutline, Key, KeyBack,
+  PlayerBack, Player, Hint, White = *0...10
 end
 
 $normalColors = [
   0xff333333,#black
   0xffff0000,#red
   0xffff8800,#orange
-  0xffffff00,#yellow
+  0xffffee00,#yellow
   0xff00ff00,#green
   0xff00ffff,#aqua
   0xff0000ff,#blue
   0xffff00ff,#purple
-  0xff996633,#brown
+  0xffff2288,#brown
   0xffffffff,#white
 ]
 $colors = [
   0xbf333333,#black
   0x5fff0000,#red
   0x5fff8800,#orange
-  0x5fffff00,#yellow
+  0x5fffee00,#yellow
   0x5f00ff00,#green
   0x5f00ffff,#aqua
   0x5f0000ff,#blue
   0x5fff00ff,#purple
-  0x5f996633,#brown
+  0x5fff2288,#brown
   0x7fffffff,#white
 ]
+$faded = 0x5fffffff
 #opacity = "7"
 #for color in $colors
 #  color = ("#{opacity}f" + color).to_i(16)
@@ -76,13 +78,16 @@ class Window < Gosu::Window
     self.caption = "Switch"
     @background = Gosu::Image.new(self, "lib/background.jpg", false)
     $platformImage = Gosu::Image.new(self, "lib/square2.png", false)
-    size = (width.to_f / @level.width.to_f).round
-    $platformImages = Gosu::Image.load_tiles(self, "lib/whitestreaks.png", size, size, false)
+    $platformWidth = (width.to_f / @level.width.to_f).round
+    $platformImages = Gosu::Image.load_tiles(self, "lib/whitestreaks.png",
+      $platformWidth, $platformWidth, false)
+    $hintBox = Gosu::Font.new(self, Gosu::default_font_name, 20)
     $windowSize = Coord.new(width, height)
-    @backgroundMult = Coord.new(width.to_f / @background.width.to_f, height.to_f / @background.height.to_f)
+    @backgroundMult = Coord.new(width.to_f / @background.width.to_f,
+                                height.to_f / @background.height.to_f)
     @nums = [Gosu::Kb0, Gosu::Kb1, Gosu::Kb2, Gosu::Kb3, Gosu::Kb4,
              Gosu::Kb5, Gosu::Kb6, Gosu::Kb7, Gosu::Kb8, Gosu::Kb9]
-    @whiteOpacity = 15
+    @whiteOpacity = 255
     @whiteColor = 0xffffffff
     restart
   end
@@ -111,8 +116,9 @@ class Window < Gosu::Window
   def update
     if @whiteOpacity >= 0
       o = @whiteOpacity.round.to_s(16)
-      @whiteColor = "#{o}fffffff".to_i(16)
-      @whiteOpacity -= 0.5
+      o = '0' + o if o.length == 1
+      @whiteColor = "#{o}ffffff".to_i(16)
+      @whiteOpacity -= 5
     end
     for i in 0...@nums.length
       num = @nums[i]
@@ -126,11 +132,23 @@ class Window < Gosu::Window
     @player.update
   end
   def draw
-    @background.draw(0, 0, Z::Background, @backgroundMult.x, @backgroundMult.y)
+    #@background.draw(0, 0, Z::Background, @backgroundMult.x, @backgroundMult.y)
     draw_quad(0, 0, @whiteColor, width, 0, @whiteColor,
               width, height, @whiteColor, 0, height, @whiteColor, Z::White)
     @level.draw
     @player.draw
+    for i in 1..8
+      color = 0xffffffff
+      x = (i - 1) * $platformWidth
+      y = 0
+      $platformImages[i - 1].draw(x, y, Z::KeyBack,
+                    1, 1, color)
+      color = $colors[i]
+      $window.draw_quad(x, y, color, x + $platformWidth, y, color,
+                x + $platformWidth, y + $platformWidth, color, x, y + $platformWidth,
+                color, Z::Key)
+      $hintBox.draw(i.to_s, x + 5, y, Z::Hint)
+    end
   end
 end
 
@@ -224,9 +242,9 @@ class Player
         while workingCoord.nil?
           i += 1
           coords = [Coord.new(orig.x + i, orig.y),
-           Coord.new(orig.x - i, orig.y),
-           Coord.new(orig.x, orig.y + i),
-           Coord.new(orig.x, orig.y - i)]
+                    Coord.new(orig.x - i, orig.y),
+                    Coord.new(orig.x, orig.y + i),
+                    Coord.new(orig.x, orig.y - i)]
           for c in coords
             workingCoord = c if !anyCollisions?(c)
           end
@@ -284,13 +302,14 @@ class Player
 end
 
 class Level
-  attr_accessor :name, :layers, :width, :index, :playerCoord
+  attr_accessor :name, :layers, :width, :index, :playerCoord, :hint
   def initialize(name, width = 40)
     @name = name
     @width = width
+    @hint = ''
     @layers = []
     for i in 0...10
-      @layers << Layer.new(i)
+      @layers << Layer.new(i, @width)
     end
     @index = 0
     @saveCounter = 10
@@ -306,32 +325,53 @@ class Level
     end
     for i in 0...@layers.length
       layer = @layers[i]
+      layer.addValues
+      layer.counter += 1
+      if layer.counter > 2#layer.multiplyer
+        layer.opacity += layer.direction * layer.multiplyer
+        layer.direction *= -1 if Random.rand(0..80) == 0
+        layer.direction = 1 if layer.opacity <= layer.minOpacity + layer.multiplyer
+        layer.direction = -1 if layer.opacity > layer.maxOpacity
+        layer.counter = 0
+      end
       layer.update(i == @index || i == 0 || i == 9)
     end
   end
   def draw
+    $hintBox.draw(@hint, $platformWidth * 8 + 10, 0, Z::Hint) if @hint
     @layers.each {|layer| layer.draw}
   end
 end
 
 class Layer
-  attr_accessor :platforms
-  def initialize(index)
+  attr_accessor :platforms, :opacity, :direction, :counter, :minOpacity, :maxOpacity, :multiplyer
+  def initialize(index, width)
     @colorIndex = index
     @platforms = {}
     @showing = false
+    @opacity = 0
+    @direction = 0
+    @counter = 0
   end
   def valid?(x, y)
     x >= 0 && y >= 0
   end
+  def addValues
+    @minOpacity = 0 if @minOpacity.nil?
+    @maxOpacity = 40 if @maxOpacity.nil?
+    @multiplyer = 1 if @multiplyer.nil?
+    @opacity = Random.rand(0..40) if @opacity.nil?
+    @direction = (Random.rand(0..1) * 2) - 1 if @direction.nil?
+    @counter = 0 if @counter.nil?
+  end
   def update(showing)
     @showing = showing
     @platforms.each_value do |platform|
-      platform.update(@showing)
+      platform.update(@showing, @opacity)
     end
   end
   def draw
-    @platforms.each_value {|platform| platform.draw} if @showing
+    @platforms.each_value {|platform| platform.draw}# if @showing
   end
 end
 
@@ -344,6 +384,7 @@ class Platform
     @size = ($windowSize.x.to_f / width.to_f).round
     @multFactor = @size.to_f / $platformImage.width.to_f
     @showing = false
+    @opacity = 0
     @freeSides = []
   end
   def collision?(c1, c2)
@@ -360,8 +401,9 @@ class Platform
     y2 = coord2.y > c1.y
     x1 && y1 && x2 && y2
   end
-  def update(showing)
+  def update(showing, opacity)
     @showing = showing
+    @opacity = opacity
     x = @coord.x * @size
     y = $windowSize.y - (@coord.y * @size) - @size
     @realCoord = Coord.new(x, y)
@@ -384,17 +426,25 @@ class Platform
     for side in @freeSides
       case side
       when :left
-        @sideQuads << Quad.new(Coord.new(topLeft.x, topLeft.y), Coord.new(topLeft.x + amt, topLeft.y),
-                               Coord.new(bottomLeft.x + amt, bottomLeft.y), Coord.new(bottomLeft.x, bottomLeft.y))
+        @sideQuads << Quad.new(Coord.new(topLeft.x, topLeft.y),
+                               Coord.new(topLeft.x + amt, topLeft.y),
+                               Coord.new(bottomLeft.x + amt, bottomLeft.y),
+                               Coord.new(bottomLeft.x, bottomLeft.y))
       when :right
-        @sideQuads << Quad.new(Coord.new(topRight.x - amt, topRight.y), Coord.new(topRight.x, topRight.y),
-                               Coord.new(bottomRight.x, bottomRight.y), Coord.new(bottomRight.x - amt, bottomRight.y))
+        @sideQuads << Quad.new(Coord.new(topRight.x - amt, topRight.y),
+                               Coord.new(topRight.x, topRight.y),
+                               Coord.new(bottomRight.x, bottomRight.y),
+                               Coord.new(bottomRight.x - amt, bottomRight.y))
       when :top
-        @sideQuads << Quad.new(Coord.new(topLeft.x, topLeft.y), Coord.new(topRight.x, topRight.y),
-                               Coord.new(topRight.x, topRight.y + amt), Coord.new(topLeft.x, topLeft.y + amt))
+        @sideQuads << Quad.new(Coord.new(topLeft.x, topLeft.y),
+                               Coord.new(topRight.x, topRight.y),
+                               Coord.new(topRight.x, topRight.y + amt),
+                               Coord.new(topLeft.x, topLeft.y + amt))
       when :bottom
-        @sideQuads << Quad.new(Coord.new(bottomLeft.x, bottomLeft.y - amt), Coord.new(bottomRight.x, bottomRight.y - amt),
-                               Coord.new(bottomRight.x, bottomRight.y), Coord.new(bottomLeft.x, bottomLeft.y))
+        @sideQuads << Quad.new(Coord.new(bottomLeft.x, bottomLeft.y - amt),
+                               Coord.new(bottomRight.x, bottomRight.y - amt),
+                               Coord.new(bottomRight.x, bottomRight.y),
+                               Coord.new(bottomLeft.x, bottomLeft.y))
       end
     end
   end
@@ -405,15 +455,25 @@ class Platform
       quad.draw(color, Z::PlatformOutline)
     end
   end
-  def draw
-    #drawSideQuads
-    #$platformImage.draw(@realCoord.x, @realCoord.y, Z::Platform,
-    #              @multFactor, @multFactor, $colors[@colorIndex])
-    getImg(@coord.dup).draw(@realCoord.x, @realCoord.y, Z::PlatformBack,
-                  1, 1, 0xffffffff)
+  def getOpacity(xopacity, color)
     color = $colors[@colorIndex]
+    color = color.to_s(16)[2..-1]
+    puts xopacity.class if xopacity.class != Fixnum
+    o = xopacity.to_s(16)
+    o = '0' + o if o.length == 1
+    color = (o + color).to_i(16)
+  end
+  def draw
+    #drawSideQuads if @showing
+    @opacity = 0 if @opacity.nil?
+    color = 0xffffffff
+    color = getOpacity(@opacity, color) if !@showing
+    getImg(@coord.dup).draw(@realCoord.x, @realCoord.y, Z::PlatformBack,
+                  1, 1, color)
+    color = $colors[@colorIndex]
+    color = getOpacity(@opacity / 2, color)if !@showing
     $window.draw_quad(@realCoord.x, @realCoord.y, color, @realCoord.x + @size, @realCoord.y, color,
-              @realCoord.x + @size, @realCoord.y + @size, color, @realCoord.x, @realCoord.y + @size, color,
-              Z::Platform)
+              @realCoord.x + @size, @realCoord.y + @size, color, @realCoord.x, @realCoord.y + @size,
+              color, Z::Platform)
   end
 end

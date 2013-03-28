@@ -59,9 +59,7 @@ class Level
   end
   def save
     getPlayerStart
-    @layers.each do |layer|
-      layer.getSides
-    end
+    #@layers.each {|layer| layer.getSides}
     file = File.open('lvls/' + @name + '.lvl', 'w')
     file.puts self.to_yaml
   end

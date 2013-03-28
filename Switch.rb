@@ -15,7 +15,7 @@ class Window < Gosu::Window
     restart
   end
   def restart
-    @whiteOpacity = 15
+    @whiteOpacity = 255
     @level = YAML.load_file(@allLevels[@levelIndex])
     @level.index = 0
     @player = Player.new(self, @level)

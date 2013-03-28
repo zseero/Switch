@@ -7,8 +7,9 @@ To launch the game, you'll need to have ruby installed, and you'll need to insta
 $ gem install gosu
 Then launch Switch.rb
 $ ruby Switch.rb
+OR you could just launch the Switch.exe file by double clicking it.
 
-If you want to design your own levels, launch LevelEditor.rb
+If you want to design your own levels, you will need ruby and gosu though. Just launch LevelEditor.rb
 $ ruby LevelEditor.rb
 
 When creating levels, click to add platforms. Press 0 to add black blocks. Black blocks will be there no matter which plane of existance the user has selected, and the black platform farthest down left will act as a spawn point. Press 9 to add white blocks. These will be there no matter which plane of existance the user has selected, and will also act as a finish line, or the end of the level.
